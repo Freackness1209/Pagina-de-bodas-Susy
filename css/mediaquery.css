@@ -1,0 +1,9 @@
+@media only screen and (max-width:500px)
+{
+    .img1{
+    background: url(./img1/00.jpg);
+    max-height: 60vh;
+    background-repeat: no-repeat;
+  
+}
+}
