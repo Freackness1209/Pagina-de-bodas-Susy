@@ -12,8 +12,9 @@ html, body{
     color:#fff;
     text-align: center;
 
+ }
 
-}
+
 
  
 @font-face {
@@ -37,7 +38,7 @@ header{
 /*
 */
 .img1{
-    background: url(./img/10.jpg);
+    background: url(../img/10.jpg);
     min-height: 90vh;
     background-size: cover;
     
@@ -46,14 +47,14 @@ header{
 }
 
 .img2{
-    background: url(./img/11_72133.jpeg);
+    background: url(../img/marmol2.jpg);
     min-height: 85vh;
 }
 .img3{
-    background: url(./img/casados1.jpeg);
-    min-height: 100vh;
+    background: url(../img/marmol2.jpg);
+    min-height: 80vh;
 }
-.img1, .img2, .img1{
+.img1, .img2, .img3{
     position: relative;
     opacity: .84;
     background-position: center;
@@ -95,6 +96,7 @@ header{
     
 
 }
+
 .heading-primary-sub{
     display: block;
     position: absolute;
@@ -109,6 +111,7 @@ header{
     animation-duration: 6s;
     
 }
+
     
 /*Animaciones*/
 
@@ -383,9 +386,12 @@ bottom: -100px;
     height: 95vH;
     background: linear-gradient(to right bottom, 
     
-    rgba(112, 123, 124, .9),
-    rgba(229,231,233, .9)),
+    rgba(112, 123, 124, .1),
+    rgba(229,231,233, .1)),
     url(./img/0.jpg);
+
+
+
     
     background-repeat: calc(3);
     background-size: cover;

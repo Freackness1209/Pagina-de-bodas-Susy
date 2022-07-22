@@ -25,7 +25,7 @@ $_post
 <body>
         <div class="img1">
             <h1 class="heading-primary">
-                <span class="heading-primary-main">Hola <?php echo $years;?> </span>
+                <span class="heading-primary-main"> <?php echo $years;?> años</span>
                 <span class="heading-primary-sub"> Mi boda de plata</span>
               </h1>
     </div>
