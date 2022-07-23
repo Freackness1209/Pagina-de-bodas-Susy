@@ -38,7 +38,7 @@ header{
 /*
 */
 .img1{
-    background: url(../img/10.jpg);
+    background: url(../img/fotos_sin_ajustar/11..jpg);
     min-height: 90vh;
     background-size: cover;
     
@@ -47,11 +47,11 @@ header{
 }
 
 .img2{
-    background: url(../img/marmol2.jpg);
+    background: url(../img/img/marmol.jpg);
     min-height: 85vh;
 }
 .img3{
-    background: url(../img/marmol2.jpg);
+    background: url(./img/marmol.jpg);
     min-height: 80vh;
 }
 .img1, .img2, .img3{
@@ -191,24 +191,9 @@ display: flex;
     
 
 }
-.marcos{
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    
-}
-.marcos__izquierdo{
-   width: 500px;
-   height: 500px;
+
    
- 
-}
-.marcos__derecho{
-    width: 510px;
-   height: 500px;
-   right: -500px;
-   
-}
+
 .composition__photo--p4{
     left: 31rem;
     top: 1rem;
@@ -219,7 +204,7 @@ display: flex;
 .composition__photo--p2:hover{
     transform: scale(1.05);
     box-shadow: 0 2.5rem 4rem #000 .9;
-    outline: .4rem solid black;
+    outline: .4rem solid;
 
 
 
@@ -267,9 +252,9 @@ display: flex;
 .main__bold,
 .main__p3{
 position: relative;
-padding-top: 5rem;
-width: 80%;
-padding-left: 15rem;
+padding-top: 1rem;
+width: 50%;
+padding-left: 1rem;
 bottom: -100px;
 }
 .text .main__move{
@@ -448,6 +433,13 @@ footer{
     text-align: center;
 
 }
+form{
+    position: absolute;
+}
+.consigue_invitacion{
+    color: black;
+    
+}
 .inputBox{
     position: relative;
     width: 250px;
@@ -455,6 +447,8 @@ footer{
     left: 25%;
     background: white;
     height: 100px;
+    border-radius: 10%;
+    
     
 
     

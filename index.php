@@ -11,10 +11,11 @@ $_post
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi boda</title>
-    <link rel="stylesheet" href="./index.css" type="text/css">
-    <link rel="stylesheet" href="./fonts.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/fonts.css" type="text/css">
     <link rel="stylesheet" href="./mediaquery.css" type="text/css">
     <script type="text/javascript" src="./index.js"></script>
+    <link rel="stylesheet" href="./invitacion.html">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -25,7 +26,7 @@ $_post
 <body>
         <div class="img1">
             <h1 class="heading-primary">
-                <span class="heading-primary-main"> <?php echo $years;?> años</span>
+                <span class="heading-primary-main"> 25 años</span>
                 <span class="heading-primary-sub"> Mi boda de plata</span>
               </h1>
     </div>
@@ -39,20 +40,20 @@ $_post
         <div id="slider">
             <ul id="slideWrap"> 
                 
-              <li><img src="./img1/0.jpg" alt=""></li>
-              <li><img src="./img1/00.jpg" alt=""></li>
-              <li><img src="./img1/1.jpg" alt=""></li>
-              <li><img src="./img1/2.jpg" alt=""></li>
-              <li><img src="./img1/3.jpg" alt=""></li>
-              <li><img src="./img1/4.jpg" alt=""></li>
-              <li><img src="./img1/5.jpg" alt=""></li>
-              <li><img src="./img1/7.jpg" alt=""></li>
-              <li><img src="./img1/8.jpg" alt=""></li>
-              <li><img src="./img1/9.jpg" alt=""></li>
-              <li><img src="./img1/12..jpg" alt=""></li>
-              <li><img src="./img1/13..jpg" alt=""></li>
-              <li><img src="./img1/14..jpg" alt=""></li>
-              <li><img src="./img1/15.jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/1.jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/2.jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/3.jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/4.jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/5.jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/7.jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/8.jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/9.jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/12..jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/13..jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/..14jpg" alt=""></li>
+              <li><img src="./img/fotos_ajustadas_slider/15..jpg" alt=""></li>
+              
+          
               
               
             </ul>
@@ -65,6 +66,15 @@ $_post
     </section>
 </header>
 
+<section class="block"> 
+
+</section>
+<div class="img2">
+    <h1 class="heading-primary-img heading-primary">
+    
+        
+      </h1>
+</div>
     
      <section class="magic">
          
@@ -78,7 +88,12 @@ $_post
             Es fácil amar a alguien cuando todo es perfecto. Mantener ese amor en los momentos imperfectos es lo que hace un amor incondicional.
              </div>
     </section>
-         
+    <div class="img2">
+        <h1 class="heading-primary-img heading-primary">
+  
+            
+          </h1>
+</div>
 
     <section class="main">
         <div class="text">
@@ -109,9 +124,7 @@ $_post
             
         </div>
 
-        <div class="marcos flex_container">
-            <img class="marcos__izquierdo"src="./img1/marco_izquierdo.png" alt="">
-            <img class="marcos__derecho" src="./img1/marco_derecho.png" alt=""></div>
+     
         
     </div>
         <img src="./img1/hoja_1.png" alt="" class="composition__photo composition__photo--p3">
@@ -119,26 +132,30 @@ $_post
     </div>
     </section>
 
+    <div class="img3">
+        <h1 class="heading-primary-img heading-primary">
+            
+            
+          </h1>
+</div>
+<img src="./marmol.jpg" alt="">
     <footer>
-        <img src="./img/1.jpg" alt="">
-        <form action="" method="post">
+        
+        
+       <div class="inputBox">
+        <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
+        
+       <input type="text" required="required" >
+       <span>Nombre</span>
+    </div>
+<br>
+       <div class="inputBox">
 
-            <div class="inputBox">
-                <h1>!Consigue tu invitación!</h1>
-                
-                <input type="text" required="required" name="nombre">
-                <span>Nombre</span>
-            </div>
-            <br>
-            <div class="inputBox">
-                
-                <input type="text" required="required" name="apellido">
-                <span>Apellido</span>
-                <input type="submit" value="Enviar">
-            </form>
+           <input type="text" required="required">
+           <span>Apellido</span>
            
         </div>
-        
+        <input type="submit" >        
     </footer>
     
 
