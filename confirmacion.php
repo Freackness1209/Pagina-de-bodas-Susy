@@ -31,7 +31,7 @@ id   = strip_tags($_GET['id']);
 ?>
 
 <?php 
- if(!isset($_POST['boletos_confirmados']) {
+ if(!isset($_POST['boletos_confirmados'])) {
     echo 'ERROR';
     die();
   } 

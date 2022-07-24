@@ -9,6 +9,8 @@
     </head>
     <body>
         <?php
+        $conexion=mysqli_connect('localhost','root','','susy');
+        print_r($_POST);
     $hayErrores=false;
     $mensajeError="";
     if(!isset($_POST["nombre"])){
@@ -20,16 +22,18 @@
     $nombre=strip_tags($_POST["nombre"]);
     $apellido=strip_tags($_POST["apellido"]);
     //aqui usamos los datos del formlario apra constuir el query
+
     $sql = 'select * from Usuarios where nombre like "'.$nombre.'%"and apellido like"'.$apellido.'%";';
-    $resultado=mysql_query($sql);
+    $resultado=$conexion->query($sql);
     
-    if($resultado ->num_rows()==0){
+    if($resultado->num_rows==0){
         $hayErrores=true;
         $mensajeError="La persona no existe";
     }
     if(!$hayErrores){
         $Usuario = mysqli_fetch_object($resultado);
     }
+    ?>
     <div>
     <?php if($hayErrores){ ?>
           Se encontraron errores: <?php echo $mensajeError;?>
@@ -41,7 +45,8 @@
          <p>Recuerda que tienes <?php echo $Usuario->boletos_asignados?> boletos asignados</p>
          Da click  para confirmar tu asistencia
          <a href="confirmar.php?id=<?php echo $Usuario->id?>">Confirmar asistencia</a>
-        }
+         <?php
+        } 
    ?>
    </div>
     // verificar la fecha, si estas en fecha, mostrar la confirmacion
@@ -49,14 +54,14 @@
     $mes = date('m');
     $dia = date('d');
 
-    if($mes>10 && $dia=1){
+    if(($mes>10 && $dia>1) || $Usuario->total_confirmaciones>=3){
         echo 'Lo sentimos ya paso la fecha para confirmar a través de la página, puedes llamarnos para confirmar tu asistencia al número';
 
     }else {
         ?>
         <form action="confirmacion.php" method="post">
            Boletos: <select name="boletos_confirmados">
-                       <?php for($i=0;i<= $Usuario->boletos_asignados; $i++){?>
+                       <?php for($i=0;$i<= $Usuario->boletos_asignados; $i++){?>
                            <option value="<?php echo $i?>"><?php echo $i?></option>
                         <?php }?>
                     </select>
