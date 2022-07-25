@@ -10,15 +10,19 @@ html, body{
     margin: 0;
     line-height:180%;
     color:#fff;
-    text-align: center;
+    
+    
 
  }
 
 
-
+@font-face{
+    font-family: "Castellar";
+    src: url(../fuentes/castellar.ttf);
+}
  
 @font-face {
-    font-family: OldEnglishFive;
+    font-family: "OldEnglishFive";
     src: url(./fuentes/Old\ English\ Five.ttf);
 }
 header{
@@ -33,12 +37,13 @@ header{
     background-size: cover;
     background-position: top;
     position: relative;
+    
     /* clip-path: polygon(0 0, 100% 0, 100% 100vh , 0 80%);*/
 }
 /*
 */
 .img1{
-    background: url(../img/fotos_sin_ajustar/11..jpg);
+    background: url(../img/fotos_sin_ajustar/1.jpg);
     min-height: 90vh;
     background-size: cover;
     
@@ -51,7 +56,7 @@ header{
     min-height: 85vh;
 }
 .img3{
-    background: url(./img/marmol.jpg);
+    background: url(../img/img/marmol.jpg);
     min-height: 80vh;
 }
 .img1, .img2, .img3{
@@ -139,9 +144,10 @@ header{
         /*transform: translateX(0);*/
     }
 }
+
 .main{
     position: relative;
-    font-family: Castellar;
+    font-family: "Castellar";
     height: 220vH;
     background-image: linear-gradient(to right bottom, 
     rgba(112, 123, 124, .8),
@@ -451,4 +457,65 @@ footer img{
   border: white 15px outset;
   border-radius: 0.2rem;
 }
+.parent{
+    display: flex;
+    justify-content: space-around;
+}
+.FlexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    overflow: auto;
+    flex-direction: column;
+}
 
+.FlexContainer div {
+    text-align: center;
+    width: 40%;
+    height: 100px;
+    margin: 5px;
+    background-color: lightblue;
+}
+.flex_container_down{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-start;
+    height: 80vh;
+    overflow: auto;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.flex_container_down div {
+    width: 40%;
+    font-family: "Castellar";
+    height: 100px;
+    margin: 5px;
+    background-color: lightblue;
+    
+}
+
+.flex_container_center {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    width: 95%;
+
+    height: 80vh;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.flex_container_center div {
+    width: 20%;
+    height: 20%;
+    margin: 5px;
+    background-color: lightblue;
+}

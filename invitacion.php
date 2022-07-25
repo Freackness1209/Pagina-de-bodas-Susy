@@ -8,6 +8,7 @@
         <title>Document</title>
     </head>
     <body>
+        <header></header>
         <?php
         $conexion=mysqli_connect('localhost','root','','susy');
         print_r($_POST);

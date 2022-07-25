@@ -1,8 +1,8 @@
 @font-face {
-    font-family: OldEnglishFive;
-    src: url(./fuentes/Old\ English\ Five.ttf);
+    font-family: "OldEnglishFive";
+    src: url(../fuentes/Old\ English\ Five.ttf);
 }
 @font-face{
-    font-family: Castellar;
-    src: url(./fuentes/castellar.ttf);
+    font-family: "Castellar";
+    src: url(../fuentes/castellar.ttf);
 }

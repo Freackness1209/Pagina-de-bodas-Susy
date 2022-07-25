@@ -1,19 +1,13 @@
 body{
     padding: 0;
     margin: 0;
-    background: red;
-}
-header{
     height: 100vH;
-    background-image:
+    background-image: url(../img/img/fondo_background.jpeg);
+    width: 100vw;
     
-
-    url(../img1/Resize_Invitación-de-boda.webp);
-    
-    
-    background-size: 90% cover;
+    background-size:  cover;
     background-position: top;
-    position: relative;
-    /* clip-path: polygon(0 0, 100% 0, 100% 100vh , 0 80%);*/
-
+    position: absolute;
+    
+    
 }

@@ -96,13 +96,35 @@ $_post
 
     
     <section class="main">
-    <div class="container">
-  
-trurytry
 
+
+
+
+
+</div>
+<section class='FlexContainer'>
+            <div><img src="./img/img/hoja1.jpg" alt="Imagen"></div>
+            <div>El tiempo es muy sabio, cuando dos personas se encuentran en el momento exacto y resulta que no es casualidad, que se estaban esperando toda la vida.</div>
+            <div>
+Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo…
+</div>
+<section class='flex_container_center'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </section>
+
+</section>
+
+<section class="flex_container_down">
+            <div>Lo logramos!</div>
+            <div>Y con gran júbilo tenemos el agrado de invitarlos junto con nuestros hijos Jonathan y Cristian a compartir con ustedes nuestras bodas de plata.</div>
+            <div>Hola</div>
+
+            </section>
 
       
-</div>
+
     
     </section>
 
