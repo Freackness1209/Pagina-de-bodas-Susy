@@ -74,15 +74,14 @@ $_post
 
          <section class="magic">
              
-             <div class="magic__title">Lo mágico de las bodas de plata</div>
-             <div class="magic__content">Estar  enamorado hoy en día de la misma persona por muchos años cada vez es más difícil, más aun en estos nuevos tiempos donde la vida es muy acelerada y desordenada, de hecho encontrar una pareja unida más de 10 años es casi un lujo en esta nueva época.
-            Celebrar cualquier aniversario de bodas es importante, pero ¿sabes qué significan las bodas de plata? El 10° aniversario ya es un logro, el 20 también, pero la primera gran celebración son las bodas de plata, el 25° aniversario de matrimonio, esta cifra redonda significa que se convivió durante un cuarto de siglo, sin contar los años de noviazgo.
-            Para llegar a los 25 años de casado, antes hay que pasar por las bodas de hierro (6 años), bodas de bronce (8 años), bodas de aluminio (10 años) y las bodas de acero (11 años). Estos cuatro elementos comparten una característica: son metales. Sin embargo, la plata es un metal semiprecioso que representa nobleza y valor; un significado que podemos trasladar al matrimonio. También simboliza la fuerza de esa unión que se ha mantenido inquebrantable durante un cuarto de siglo. La plata puede combinarse fácilmente con otros elementos, eso significa que los dos se han complementado durante este cuarto de siglo. 
-        </div>
-        <div class="magic_bold">
-            
-            Es fácil amar a alguien cuando todo es perfecto. Mantener ese amor en los momentos imperfectos es lo que hace un amor incondicional.
-        </div>
+         <section class="magic_main">
+            <div class="magic_title">Lo mágico de las bodas de plata</div>
+            <div class="magic_content">Estar  enamorado hoy en día de la misma persona por muchos años cada vez es más difícil, más aun en estos nuevos tiempos donde la vida es muy acelerada y desordenada, de hecho encontrar una pareja unida más de 10 años es casi un lujo en esta nueva época.
+Celebrar cualquier aniversario de bodas es importante, pero ¿sabes qué significan las bodas de plata? El 10° aniversario ya es un logro, el 20 también, pero la primera gran celebración son las bodas de plata, el 25° aniversario de matrimonio, esta cifra redonda significa que se convivió durante un cuarto de siglo, sin contar los años de noviazgo.
+Para llegar a los 25 años de casado, antes hay que pasar por las bodas de hierro (6 años), bodas de bronce (8 años), bodas de aluminio (10 años) y las bodas de acero (11 años). Estos cuatro elementos comparten una característica: son metales. Sin embargo, la plata es un metal semiprecioso que representa nobleza y valor; un significado que podemos trasladar al matrimonio. También simboliza la fuerza de esa unión que se ha mantenido inquebrantable durante un cuarto de siglo. La plata puede combinarse fácilmente con otros elementos, eso significa que los dos se han complementado durante este cuarto de siglo.
+</div>
+            <div class="magic_bold">Es fácil amar a alguien cuando todo es perfecto. Mantener ese amor en los momentos imperfectos es lo que hace un amor incondicional.</div>
+        </section>
     
     </section>
     <div class="img2">
@@ -109,7 +108,7 @@ $_post
 Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo…
 </div>
 <section class='flex_container_center'>
-            <div>1</div>
+            <div><img src="./img/fotos_ajustadas_slider/0.jpg" alt="">1</div>
             <div>2</div>
             <div>3</div>
         </section>

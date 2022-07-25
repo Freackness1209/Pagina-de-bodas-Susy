@@ -14,8 +14,14 @@ html, body{
     
 
  }
-
-
+@font-face {
+    font-family: "Book Antiqua Bold";
+    src: url(../fuentes/05660_BookAntiquaBold.ttf);
+}
+@font-face{
+    font-family: "Book Antiqua";
+    src: url(../fuentes/02252_ANTQUA.ttf);
+}
 @font-face{
     font-family: "Castellar";
     src: url(../fuentes/castellar.ttf);
@@ -53,11 +59,11 @@ header{
 
 .img2{
     background: url(../img/img/marmol.jpg);
-    min-height: 85vh;
+    min-height: 65vh;
 }
 .img3{
     background: url(../img/img/marmol.jpg);
-    min-height: 80vh;
+    min-height: 50vh;
 }
 .img1, .img2, .img3{
     position: relative;
@@ -148,7 +154,7 @@ header{
 .main{
     position: relative;
     font-family: "Castellar";
-    height: 220vH;
+    height: 190vH;
     background-image: linear-gradient(to right bottom, 
     rgba(112, 123, 124, .8),
     rgba(229,231,233, .5)),
@@ -331,35 +337,51 @@ display: flex;
     
 
 }
-.magic__title{
-font-family:OldEnglishFive;
-font-size: 2rem;
-padding: 50px;
-color: black;
-justify-content: center;
-padding-top: 8rem;
+
+.magic_main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    
+    
+    height: 100vh;
+    overflow: auto;
+    flex-direction: column;
 }
-.magic__content{
-font-family:calibri, Georgia, 'Times New Roman', Times, serif;
-width: 75rem;
-font-size: 1.2rem;
-padding-left: 14rem;
-padding-top:1rem;
-letter-spacing: .08rem;
-color: black;
-justify-content: center;
 
 
-
+.magic div {
+    
+    color: black;
+    margin: 5px;
+    
+}
+.magic_title{
+    width: 50%;
+    height: 20%;
+    font-size: 30px;
+    font-family: "OldEnglishFive";
+    padding-top: 4%;
+    
+    
+    
+}
+.magic_content{
+    width: 50%;
+    height: 60%;
+    font-size: 16px;
+    font-family: "Book Antiqua";
 }
 .magic_bold{
-    font-family:calibri, Georgia, 'Times New Roman', Times, serif;
+    width: 30%;
+    height: 30%;
     font-weight: bold;
-    padding-top: 2rem;
-    font-size: 1rem;
-    color: black;
-    justify-content: center;
+    font-size: 16px;
+    font-family: "Book Antiqua Bold";
 }
+
 
 footer{
     height: 55vH;
@@ -457,10 +479,7 @@ footer img{
   border: white 15px outset;
   border-radius: 0.2rem;
 }
-.parent{
-    display: flex;
-    justify-content: space-around;
-}
+
 .FlexContainer {
     display: flex;
     flex-wrap: nowrap;
@@ -484,7 +503,7 @@ footer img{
     justify-content: flex-end;
     align-items: center;
     align-content: flex-start;
-    height: 80vh;
+    height: 60vh;
     overflow: auto;
     text-align: center;
     flex-direction: column;
@@ -516,6 +535,22 @@ footer img{
 .flex_container_center div {
     width: 20%;
     height: 20%;
+    
     margin: 5px;
     background-color: lightblue;
+    
+}
+
+.flex_container_center div:nth-child(odd){
+    color: red;
+    transition: all 0.8s;
+ 
+}
+
+.flex_container_center div:nth-child(odd):hover{
+    transform: scale(1.05);
+    box-shadow: 0 3.5rem 4rem #000 1;
+    outline: .4rem solid white;
+
+ 
 }
