@@ -113,6 +113,7 @@ header{
 }
 .heading-primary-main
 {
+    padding-left: 6%;
     margin: 30px;
     top: 30%;
     font-size: 200%;
@@ -306,12 +307,13 @@ display: flex;
     text-shadow: 0;
   }
 .magic{
-    
+
     background: linear-gradient(to right bottom, 
     
     rgba(112, 123, 124, .1),
     rgba(229,231,233, .1)),
     url(./img/0.jpg);
+
 
 
 
@@ -321,6 +323,7 @@ display: flex;
     background-position: top;
     position: relative;
     text-align: center;
+    
    
     
     
@@ -479,6 +482,11 @@ footer img{
     align-content: flex-start;
     overflow: auto;
     flex-direction: column;
+    line-height: 1.6;
+    background: #E8E6E6;
+    
+ 
+
     
 }
 
@@ -486,14 +494,21 @@ footer img{
     text-align: center;
     width: 40%;
     padding: 25px;
-    
+    color: #000;
 margin: 5px;
-    background-color: lightblue;
+/*
+background-color: lightblue;
+*/
 }
 
 .FlexContainer .hoja1{
 
-z-index: 2;
+
+-moz-transform: rotate(10deg);
+     -o-transform: rotate(10deg);
+     -webkit-transform: rotate(10deg);
+     transform: rotate(10deg);
+     width: 115%;
 
     
 }
@@ -506,16 +521,26 @@ z-index: 2;
     overflow: auto;
     text-align: center;
     flex-direction: column;
+    line-height: 1.6;
+    background: #E8E6E6;
+
     
 }
 
 
 
+
 .flex_container_down div {
-    width: 20%;
-    font-family: "Castellar";
+    text-align: center;
+    width: 40%;
+    padding: 25px;
     margin: 5px;
+    font-family: "Castellar";
+    color: #000;
+    /*
     background-color: lightblue;
+    */
+    
     
 }
 
@@ -531,26 +556,32 @@ z-index: 2;
     overflow: auto;
     flex-direction: row;
 }
-
-.flex_container_center div {
-    width: 20%;
-    height: 20%;
-    
-    margin: 5px;
-    background-color: lightblue;
-    
+.flex_container_center div{
+    background: none;
 }
 
+
+
 .flex_container_center div:nth-child(odd){
-    color: red;
+    
+transition: all 0.8s;
+
+ 
+}
+.flex_container_center img{
+    border-radius: 50%;
     transition: all 0.8s;
+    
+    
  
 }
 .flex_item_center{
     flex-grow:2;
+    line-height: 4;
+    font-size: 30px;
 }
 
-.flex_container_center div:nth-child(odd):hover{
+.flex_container_center div:nth-child(odd):hover img {
     transform: scale(1.05);
     box-shadow: 0 3.5rem 4rem #000 1;
     outline: .4rem solid white;
@@ -562,3 +593,18 @@ z-index: 2;
     width: 600px;
     height: 300px;
   }
+
+ .hoja2{
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    width: 115%;
+    
+    
+    
+ } 
+
+ .fecha{
+     color: #000;
+ }

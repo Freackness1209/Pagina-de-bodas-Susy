@@ -28,7 +28,7 @@
 
         <div class="img1">
             <h1 class="heading-primary">
-                <span class="heading-primary-main"> 2345sf años</span>
+                <span class="heading-primary-main"> 25 años</span>
                 <span class="heading-primary-sub"> Mi boda de plata</span>
               </h1>
     </div>
@@ -157,20 +157,23 @@ Para llegar a los 25 años de casado, antes hay que pasar por las bodas de hierr
 
 </div>
 <section class='FlexContainer'>
-            <div class="hoja1"><img src="./img/img/hoja_1.png" alt="" ></div>
+            <div><img src="./img/img/hoja_1.png" alt="" class="hoja1"></div>
             <div>El tiempo es muy sabio, cuando dos personas se encuentran en el momento exacto y resulta que no es casualidad, que se estaban esperando toda la vida.</div>
-            <div>
-Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo…
-</div>
+           
 <section class='flex_container_center'>
-            <div><img src="./img/fotos_ajustadas_slider/0.jpg" alt="">1</div>
-            <div>2</div>
-            <div>3</div>
+            <div><img src="./img/fotos_ajustadas_slider/0.jpg" alt=""></div>
+            <div class="flex_item_center">Susana <br> y <br> Edgardo <br> Sábado 05 Noviembre
+               
+            </div>
+            <div><img src="./img/fotos_ajustadas_slider/00.jpg" alt=""></div>
         </section>
 
 </section>
 
 <section class="flex_container_down">
+<div>
+Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo…
+</div>
             <div>Lo logramos!</div>
             <div>Y con gran júbilo tenemos el agrado de invitarlos junto con nuestros hijos Jonathan y Cristian a compartir con ustedes nuestras bodas de plata.</div>
             <div><img src="./img/img/hoja_2.png" alt="" class="hoja2"></div>
