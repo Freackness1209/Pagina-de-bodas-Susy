@@ -7,24 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-
- $data['todook'] =  true;   
+    <?php 
+/*
+$data['todook'] =  true;   
 header('Content-Type: application/json; charset=utf-8');
 echo json_encode($data);
-if(!isset($_GET['id']) {
+*/
+if(!isset($_POST['id'])) {
   echo 'ERROR';
   die();
 }
-id   = strip_tags($_GET['id']);  
+$id = strip_tags($_POST['id']);  
    //si estamos aqui, si trajo un ID
    //actualizacion en mysql para confirmr los boletos de la persona
-    </script>
-
+    
+   ?>
 
 <?php
   $sql = "update Usuarios set boletos_confirmados = boletos_asignados where id=".$id;
-  $resultado = mysqli_query($sql);
+  $conexion=mysqli_connect('localhost','root','','susy');
+  $resultado = $conexion->query($sql);
   
   echo 'Gracias por confirmar';
 
@@ -36,14 +38,10 @@ id   = strip_tags($_GET['id']);
     die();
   } 
 
-$user_id 						 	= $_POST['user_id']; 
+$user_id 						 	= $_POST['id']; 
 $boletos_confirmados  = $_POST['boletos_confirmados']; 
 
 //verificar 1) si aun estas en fecha de confirmar, 2) aun puedes seguir mandando confirmaciones
-
-$sql = "update Usuarios set boletos_confirmados = '.$boletos_confirmados.' where id=".$user_id;
-$resultado = mysqli_query($sql); 
-echo 'Gracias por confirmar';
   
 ?>
     

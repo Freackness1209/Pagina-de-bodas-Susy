@@ -1,9 +1,3 @@
-<?php 
-$nombre = "Susy";
-$years=$_POST["nombre"];;
-echo $nombre;
-$_post
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +8,14 @@ $_post
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link rel="stylesheet" href="./css/fonts.css" type="text/css">
     <link rel="stylesheet" href="./mediaquery.css" type="text/css">
+    link
     <script type="text/javascript" src="./index.js"></script>
     <link rel="stylesheet" href="./invitacion.html">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -24,6 +24,8 @@ $_post
 
 </head>
 <body>
+
+
         <div class="img1">
             <h1 class="heading-primary">
                 <span class="heading-primary-main"> 2345sf años</span>
@@ -31,39 +33,92 @@ $_post
               </h1>
     </div>
 
+    <div class="img0">
+   
+</div>
+
 <header>
 
-    <section class="slide">
-       
-       
+    
+     <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/0.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/00.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/1.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/3.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/4.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/5.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/7.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/8.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/9.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/12..jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/13..jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/14..jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/15.jpg" alt=""></div>
+    
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
 
-        <div id="slider">
-            <ul id="slideWrap"> 
-                
-              <li><img src="./img/fotos_ajustadas_slider/1.jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/2.jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/3.jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/4.jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/5.jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/7.jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/8.jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/9.jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/12..jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/13..jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/..14jpg" alt=""></li>
-              <li><img src="./img/fotos_ajustadas_slider/15..jpg" alt=""></li>
-              
-          
-              
-              
-            </ul>
-            <a id="prev" href="#">&#8810;</a>
-            <a id="next" href="#">&#8811;</a>
-          </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+   const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+
+</script>
+       
+<style>
+    .swiper{
+        height: 100%;
+        width:100%;
+    }
+    .swiper-slide{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100%;
+        width:100%;
         
-        </div>
-     
-    </section>
+    }
+</style>
+
+   
+    
 </header>
 
 
@@ -102,7 +157,7 @@ Para llegar a los 25 años de casado, antes hay que pasar por las bodas de hierr
 
 </div>
 <section class='FlexContainer'>
-            <div><img src="./img/img/hoja1.jpg" alt="Imagen"></div>
+            <div class="hoja1"><img src="./img/img/hoja_1.png" alt="" ></div>
             <div>El tiempo es muy sabio, cuando dos personas se encuentran en el momento exacto y resulta que no es casualidad, que se estaban esperando toda la vida.</div>
             <div>
 Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo…
@@ -118,7 +173,7 @@ Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo�
 <section class="flex_container_down">
             <div>Lo logramos!</div>
             <div>Y con gran júbilo tenemos el agrado de invitarlos junto con nuestros hijos Jonathan y Cristian a compartir con ustedes nuestras bodas de plata.</div>
-            <div>Hola</div>
+            <div><img src="./img/img/hoja_2.png" alt="" class="hoja2"></div>
 
             </section>
 

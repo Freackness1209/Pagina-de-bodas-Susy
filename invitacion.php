@@ -30,6 +30,7 @@
     if($resultado->num_rows==0){
         $hayErrores=true;
         $mensajeError="La persona no existe";
+        
     }
     if(!$hayErrores){
         $Usuario = mysqli_fetch_object($resultado);
@@ -38,6 +39,7 @@
     <div>
     <?php if($hayErrores){ ?>
           Se encontraron errores: <?php echo $mensajeError;?>
+          <a href="index.php">Da click aqui para intentarlo de nuevo</a>
     <?php }else{ ?>
  
        //tu html de la invitacion
@@ -46,9 +48,7 @@
          <p>Recuerda que tienes <?php echo $Usuario->boletos_asignados?> boletos asignados</p>
          Da click  para confirmar tu asistencia
          <a href="confirmar.php?id=<?php echo $Usuario->id?>">Confirmar asistencia</a>
-         <?php
-        } 
-   ?>
+       
    </div>
     // verificar la fecha, si estas en fecha, mostrar la confirmacion
     <?php
@@ -66,12 +66,23 @@
                            <option value="<?php echo $i?>"><?php echo $i?></option>
                         <?php }?>
                     </select>
-                   <input type="hidden" name="user_id" value="<?php echo $Usuario->id?>">
+                   <input type="hidden" name="id" value="<?php echo $Usuario->id?>">
                    <button type="submit">Confirmar</button>
 
              </form>
     
-    <?php }?>
+    <?php }
+    
+    if($Usuario->total_confirmaciones<3){
+        $sql="update Usuarios set total_confirmaciones = total_confirmaciones+1 where id =".$Usuario->id;
+        $resultado=$conexion->query($sql);
+        echo "Gracias por confirmar";
+    }else{
+        echo "Ya no puedes confirmar";
+    }
+    
+        } 
+   ?>
 
     <script>
     fetch('confirmar.php'). then((result)={
