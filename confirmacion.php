@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sylesheet" hred="./css/confirmacion.css">
     <title>Document</title>
 </head>
 <body>
@@ -28,7 +29,7 @@ $id = strip_tags($_POST['id']);
   $conexion=mysqli_connect('localhost','root','','susy');
   $resultado = $conexion->query($sql);
   
-  echo 'Gracias por confirmar';
+  echo "<h1>Gracias por confirmar</h1>";
 
 ?>
 

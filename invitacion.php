@@ -11,7 +11,7 @@
         <header></header>
         <?php
         $conexion=mysqli_connect('localhost','root','','susy');
-        print_r($_POST);
+        //print_r($_POST);
     $hayErrores=false;
     $mensajeError="";
     if(!isset($_POST["nombre"])){
@@ -42,23 +42,35 @@
           <a href="index.php">Da click aqui para intentarlo de nuevo</a>
     <?php }else{ ?>
  
-       //tu html de la invitacion
-         <h3>Bienvenido <?php echo $Usuario->nombre. ' '. $Usuario->apellido?>,</h3>
-         <p>Te invitamos a nuestros 25 años de Susy y Garo</p>
-         <p>Recuerda que tienes <?php echo $Usuario->boletos_asignados?> boletos asignados</p>
-         Da click  para confirmar tu asistencia
-         <a href="confirmar.php?id=<?php echo $Usuario->id?>">Confirmar asistencia</a>
+        <header class="heading-primary">
+
+            //tu html de la invitacion
+            <h3 class="heading-primary-main">Bienvenido <?php echo $Usuario->nombre. ' '. $Usuario->apellido?>,</h3>
+            <p class="heading-primary-sub">Te invitamos a nuestros 25 años de Susy y Garo</p>
+            <p class="heading-primary-third">Recuerda que tienes <?php echo $Usuario->boletos_asignados?> boletos asignados</p>
+            Da click  para confirmar tu asistencia
+            <a href="confirmar.php?id=<?php echo $Usuario->id?>">Confirmar asistencia</a>
+        </header>
        
    </div>
-    // verificar la fecha, si estas en fecha, mostrar la confirmacion
+    <!--
+
+        verificar la fecha, si estas en fecha, mostrar la confirmacion
+    -->
+  
     <?php
     $mes = date('m');
     $dia = date('d');
 
     if(($mes>10 && $dia>1) || $Usuario->total_confirmaciones>=3){
-        echo 'Lo sentimos ya paso la fecha para confirmar a través de la página, puedes llamarnos para confirmar tu asistencia al número';
+        echo "Lo sentimos ya paso la fecha para confirmar a través de la página, puedes llamarnos para confirmar tu asistencia al número +525513413210";
 
     }else {
+        
+        
+        $sql="update Usuarios set total_confirmaciones = total_confirmaciones+1 where id =".$Usuario->id;
+        $resultado=$conexion->query($sql);
+        echo "Gracias por confirmar";
         ?>
         <form action="confirmacion.php" method="post">
            Boletos: <select name="boletos_confirmados">
@@ -73,6 +85,7 @@
     
     <?php }
     
+    /*
     if($Usuario->total_confirmaciones<3){
         $sql="update Usuarios set total_confirmaciones = total_confirmaciones+1 where id =".$Usuario->id;
         $resultado=$conexion->query($sql);
@@ -81,8 +94,10 @@
         echo "Ya no puedes confirmar";
     }
     
-        } 
-   ?>
+} 
+*/
+?>
+
 
     <script>
     fetch('confirmar.php'). then((result)={

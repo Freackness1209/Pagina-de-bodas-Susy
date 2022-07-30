@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi boda</title>
+    <title>Bodas de Plata Susy y Garo</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link rel="stylesheet" href="./css/fonts.css" type="text/css">
     <link rel="stylesheet" href="./mediaquery.css" type="text/css">
-    link
+    <link rel="icon" type="image/png" href="./img/icons/Logo_susy_garo.png">
     <script type="text/javascript" src="./index.js"></script>
     <link rel="stylesheet" href="./invitacion.html">
 
@@ -39,27 +39,32 @@
 
 <header>
 
-    
-     <!-- Slider main container -->
+    <!-- Slider main container -->
 <div class="swiper">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/0.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/00.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/1.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/2.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/3.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/4.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/5.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/7.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/8.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/9.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/1.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/3.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/4.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/5.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/6.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/7.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/8.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/9.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/11.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/12.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/13.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./img/bryan-ajustadas/14.jpg" alt=""></div>
+
+
     <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/12..jpg" alt=""></div>
     <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/13..jpg" alt=""></div>
     <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/14..jpg" alt=""></div>
     <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/15.jpg" alt=""></div>
     
+    ...
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
@@ -71,11 +76,15 @@
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
 </div>
+   
+  
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+-->
 <script>
-   const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  spaceBetween: 30,
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
           delay: 2500,
@@ -192,28 +201,85 @@ Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo�
             
           </h1>
 </div>
+ 
 
-    <footer>
-    <img src="./marmol.jpg" alt="">
-    <form action="invitacion.php" method="POST">
+     <footer>
 
-        
-        <div class="inputBox">
-            <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
+     <div class="col-1-of-2">
+         <div class="composition">
+         <img src="./img/fotos_sin_ajustar/foto.jpg" alt="photo 1" class="composition_photo composition_photo_p1">
+         <form action="invitacion.php" method="POST" class="composition_photo composition_photo_p2">
             
-            <input type="text" required="required" name="nombre">
-            <span>Nombre</span>
-        </div>
-        <br>
-        <div class="inputBox">
             
-           <input type="text" required="required" name="apellido">
-           <span>Apellido</span>
-           
+            <div class="inputBox">
+                <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
+                
+                <input type="text" required="required" name="nombre">
+                <span>Nombre</span>
+            </div>
+            <br>
+            <div class="inputBox">
+                
+                <input type="text" required="required" name="apellido">
+                <span>Apellido</span>
+                
+            </div>
+            <button type="submit" class="btn-outline">Enviar</button>  
+        </form>  
+         
+         </div>
+    </div>
+<!--
+
+    
+    
+    <div class='Flex_footer'>
+        <div class="Flex_footer_item1">  <form action="invitacion.php" method="POST">
+            
+            
+            <div class="inputBox">
+                <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
+                
+                <input type="text" required="required" name="nombre">
+                <span>Nombre</span>
+            </div>
+            <br>
+            <div class="inputBox">
+                
+                <input type="text" required="required" name="apellido">
+                <span>Apellido</span>
+                
+            </div>
+            <button type="submit" class="btn-outline">Enviar</button>  
+        </form>        </div>
+        <div class="Flex_footer_item2"> 
+            </div>
+            <img src="./img/fotos_ajustadas_slider/0.jpg" alt=""></div>
         </div>
-        <input type="submit" >        
-    </form>        
-    </footer>
+        <!---
+        <img src="./img/fotos_ajustadas_slider/0.jpg" alt="">
+        <form action="invitacion.php" method="POST">
+            
+            
+            <div class="inputBox">
+                <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
+                
+                <input type="text" required="required" name="nombre">
+                <span>Nombre</span>
+            </div>
+            <br>
+            <div class="inputBox">
+                
+                <input type="text" required="required" name="apellido">
+                <span>Apellido</span>
+                
+            </div>
+            <input type="submit" >        
+        </form>        
+    -->
+-->
+</footer>
+
     
 
 </body>

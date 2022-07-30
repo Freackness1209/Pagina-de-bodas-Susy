@@ -1,9 +1,18 @@
 @media only screen and (max-width:500px)
 {
-    .img1{
-    background: url(./img1/00.jpg);
-    max-height: 60vh;
-    background-repeat: no-repeat;
-  
-}
-}
+    @media(max-width:600px){
+        .flex_container_center{
+            flex-direction: column;
+        }
+        .flex_item_center{
+            font-size: 10px; /*Aqui el problema es que no se cambia la letra si reduzco la pantalla*/
+        }
+        .flex_container_center{
+            height: 100vh;
+        }
+        .heading-primary-main{
+            font-size: 30px; /*No se cambia el font size a 30px*/
+        }
+    }
+
+

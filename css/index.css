@@ -8,7 +8,7 @@
 html, body{
     height: 100%;
     margin: 0;
-    line-height:180%;
+    
     color:#fff;
     line-height:0;
     
@@ -96,14 +96,14 @@ header{
     position: absolute;
 }
 .heading-primary{
-    backface-visibility: hidden;
+    
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-content: flex-start;
     width:100%;
-    height: 90vh;
+    padding-top: 300px;
     overflow: auto;
     flex-direction: column;
     padding-left: 33%;
@@ -116,7 +116,7 @@ header{
     padding-left: 6%;
     margin: 30px;
     top: 30%;
-    font-size: 200%;
+    font-size: 65px;
     text-shadow: 0 0 0.93rem #000;
     width: 90%;
     left: 10%;
@@ -128,10 +128,11 @@ header{
 
 }
 
+
 .heading-primary-sub{
     margin: 30px;
     top: 40%;
-    font-size: 100%;
+    font-size: 30px;
     text-shadow: 0 0 15px #000;
     width: 90%;
     left: 10%;
@@ -251,8 +252,8 @@ display: flex;
     text-align: justify;
 }
 
-
-  #slider ul {
+/*
+#slider ul {
     position: relative;
     list-style: none;
     height: 100%;
@@ -263,20 +264,20 @@ display: flex;
     left: 0;
   }
   #slider ul li {
-    position: relative;
-    height: 100%;
-   
-    float: left;
-  }
-  #slider ul li img{
+      position: relative;
+      height: 100%;
+      
+      float: left;
+    }
+    #slider ul li img{
     width: 48.25rem;
     height: 25rem;
     
     
     
-  }
-  
-  #slider #prev, #slider #next {
+}
+
+#slider #prev, #slider #next {
     
     line-height: 3.125rem;
     border-radius: 50%;
@@ -289,30 +290,32 @@ display: flex;
     top: 50%;
     transform: translateY(-50%);
     transition: all 150ms ease;
-  }
-  #slider #prev {
+}
+#slider #prev {
     left: 0.625rem;
     
     visibility: hidden;
     
-  }
-  #slider #next {
+}
+#slider #next {
     right: 0.625rem;
     
     visibility: hidden;
     
-  }
-  #slider #prev:hover, #slider #next:hover {
+}
+#slider #prev:hover, #slider #next:hover {
     background-color: rgba(0, 0, 0, 0.5);
     text-shadow: 0;
-  }
+}
+*/
 .magic{
 
+
     background: linear-gradient(to right bottom, 
-    
     rgba(112, 123, 124, .1),
     rgba(229,231,233, .1)),
     url(./img/0.jpg);
+
 
 
 
@@ -323,6 +326,7 @@ display: flex;
     background-position: top;
     position: relative;
     text-align: center;
+    padding: 2rem;
     
    
     
@@ -352,7 +356,7 @@ display: flex;
 }
 .magic_title{
     
-    width: 50%;
+    max-width:600px;
     height: 20%;
     font-size: 30px;
     font-family: "OldEnglishFive";
@@ -363,13 +367,13 @@ display: flex;
     
 }
 .magic_content{
-    width: 50%;
+    max-width:600px;
     height: 60%;
     font-size: 16px;
     font-family: "Book Antiqua";
 }
 .magic_bold{
-    width: 30%;
+    max-width:600px;
     padding-top: 3%;
     font-weight: bold;
     font-size: 16px;
@@ -378,34 +382,37 @@ display: flex;
 
 
 footer{
-    height: 55vH;
-    background: linear-gradient(to right bottom, 
     
-    rgba(112, 123, 124, .9),
-    rgba(229,231,233, .9)),
-    url(./img/0.jpg);
+    
     
     background-repeat: calc(3);
     background-size: cover;
     background-position: top;
     position: relative;
     text-align: center;
+    line-height: 1.7;
+    
+
+
 
 }
-form{
-    position: absolute;
-}
+
+
 .consigue_invitacion{
     color: black;
+    background-color: white;
+    font-size: 35px;
+    
     
 }
 .inputBox{
     position: relative;
     width: 250px;
-    top: 20%;
-    left: 25%;
-    background: white;
-    height: 100px;
+    top: -25px;
+    left: -52px;
+    background: ;
+    
+    
     border-radius: 10%;
     
     
@@ -415,13 +422,13 @@ form{
 }
 .inputBox h1{
     padding-bottom: 1.3rem;
-    z-index: 4;
+    
 }
 .inputBox input{
     width: 100%;
     padding: 10px;
      
-    background: #1d2b3a;
+    background: grey;
     border-radius: 5px;
     outline: none;
     color: #fff;
@@ -433,11 +440,14 @@ form{
 
 .inputBox span{
     position: absolute;
-    left: 0;
+    color: #000;
+    left: 18px;
     padding: 10px;
     pointer-events: none;
-    font-size: 1em;
+    font-size: 0.8em;
+    /*
     color: rgba(255, 255, 255, 0.25);
+    */
     text-transform: uppercase;
     transition: 0.5s;
     
@@ -445,34 +455,63 @@ form{
 }
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span{
-     color: #00dfc4;
+    /*
+    color: #00dfc4;
+    */
+    color: #696969;
      transform: translateX(10px) translateY(-18px);
      font-size: 0.65em;
-     padding: 0 10px;
+     padding: 0 15px;
+     /*
      background: #1d2b3a;
-     border-left: 1px solid #00dfc4 ;
-     border-right: 1px solid #00dfc4 ;
+     */
+     
+     background: #D3d3d3;
+     
+     
+     border-left: 1px solid #000 ;
+     border-right: 1px solid #000 ;
      letter-spacing: 0.2em;
 }
 .inputBox:nth-child(2) input:valid ~ span,
 .inputBox:nth-child(2) input:focus ~ span{
     background: #00dfc4;
-    color: #1d2b3a;
+    
+    
+    /*
+    color:#1d2b3a;
+    */
+    color: #696969;
     border-radius: 2px;
+    
 
 }
+/*
+#1d2b3a
+*/
 .inputBox input:valid 
 .inputBox input:focus{
+    /*
     border: 1px solid #00dfc4;
+    */
+    border: 1px solid #696969;
 }
+form{
+    background: white;
+    padding: 60px;
+    border-radius:5% ;
+}
+/*
 footer img{
-    width: 25rem;
-    height: 20rem;
-    position: absolute;
-  top: 20px;
+    width: 35rem;
+    height: 32rem;
+    left: -100px;
+    
+  top: -10px;
   border: white 15px outset;
-  border-radius: 0.2rem;
+  border-radius: 1rem;
 }
+*/
 
 .FlexContainer {
     display: flex;
@@ -483,7 +522,7 @@ footer img{
     overflow: auto;
     flex-direction: column;
     line-height: 1.6;
-    background: #E8E6E6;
+    background: none;
     
  
 
@@ -492,7 +531,7 @@ footer img{
 
 .FlexContainer div {
     text-align: center;
-    width: 40%;
+    max-width:600px ;
     padding: 25px;
     color: #000;
 margin: 5px;
@@ -522,7 +561,7 @@ background-color: lightblue;
     text-align: center;
     flex-direction: column;
     line-height: 1.6;
-    background: #E8E6E6;
+    background: none;
 
     
 }
@@ -532,7 +571,7 @@ background-color: lightblue;
 
 .flex_container_down div {
     text-align: center;
-    width: 40%;
+    max-width: 600px;
     padding: 25px;
     margin: 5px;
     font-family: "Castellar";
@@ -544,6 +583,7 @@ background-color: lightblue;
     
 }
 
+
 .flex_container_center {
     display: flex;
     flex-wrap: nowrap;
@@ -551,11 +591,11 @@ background-color: lightblue;
     align-items: center;
     align-content: flex-start;
     width: 95%;
-    
     height: 80vh;
     overflow: auto;
     flex-direction: row;
 }
+
 .flex_container_center div{
     background: none;
 }
@@ -590,8 +630,8 @@ transition: all 0.8s;
 }
 
 .swiper {
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
   }
 
  .hoja2{
@@ -608,3 +648,112 @@ transition: all 0.8s;
  .fecha{
      color: #000;
  }
+
+
+
+.Flex_footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+
+    background-color: #E8E6E6;
+    height: 100vh;
+    overflow: auto;
+    flex-direction: row;
+}
+.Flex_footer div{
+
+    padding-left: 17%;
+    margin: 5px;
+    
+    
+}
+
+
+.btn-outline{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    padding: 7px 25px;
+    border: 2px solid #1d2b3a;
+    position: relative;
+    transition: .5s;
+    cursor: pointer;
+    
+
+}
+.btn-outline:hover{
+    background: #DCDCDC;
+}
+
+.btn-outline::before,
+.btn-outline::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: .5s;
+}
+
+.btn-outline::before{
+    top: -5px;
+    left: -5px;
+    border-width: 2px 0 0 2px;
+}
+.btn-outline::after{
+    bottom: -5px;
+    right: -5px;
+    border-width: 0 2px 2px 0;
+}
+
+.btn-outline:hover::before,
+.btn-outline:hover::after{
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+}
+
+    
+
+.composition{
+    position: relative;
+   
+}
+.composition_photo{
+    width: 30%;
+    box-shadow: 0 1rem 4rem #000;
+    border-radius: 4%;
+    position: absolute;
+    z-index: 10;
+    transition: all .5s;
+    
+
+    
+}
+.composition_photo_p1{
+ left: 40rem;
+ top:-2rem;
+ z-index: 20;
+ border: white 15px outset;
+
+}
+.composition_photo_p2{
+    text-align: center;
+    left: 20rem;
+    top:10rem;
+   
+}
+.composition_photo_p3{
+    
+    
+}
+
+.composition_photo_p1:hover{
+    transform: scale(1.04);
+    box-shadow: 0 1.8rem 4rem #000;
+    
+}
+
