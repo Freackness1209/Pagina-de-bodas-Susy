@@ -34,17 +34,15 @@ html, body{
     src: url(./fuentes/Old\ English\ Five.ttf);
 }
 header{
+    /*
     height: 80vH;
-    background-image: linear-gradient(to right bottom, 
+    width: 100vh;
     
-    rgba(112, 123, 124, .5),
-    rgba(229,231,233, .5)),
-    url(./img/marmol2.jpg);
-    
-    background-repeat: calc(3);
-    background-size: cover;
     background-position: top;
     position: relative;
+    */
+    
+    
     
     /* clip-path: polygon(0 0, 100% 0, 100% 100vh , 0 80%);*/
 }
@@ -59,6 +57,7 @@ header{
     
 
 }
+
 .img0{
     background: url(../img/img/marmol2.jpg);
     min-height: 50vh;
@@ -410,7 +409,7 @@ footer{
     width: 250px;
     top: -25px;
     left: -52px;
-    background: ;
+    
     
     
     border-radius: 10%;
@@ -746,10 +745,6 @@ transition: all 0.8s;
     top:10rem;
    
 }
-.composition_photo_p3{
-    
-    
-}
 
 .composition_photo_p1:hover{
     transform: scale(1.04);
@@ -757,3 +752,6 @@ transition: all 0.8s;
     
 }
 
+.swiper .swiper-slide img{
+ width: 100%;       
+}

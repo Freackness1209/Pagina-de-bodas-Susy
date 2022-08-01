@@ -2,8 +2,8 @@
 //esta línea nos evita mostrar errores tipo warning
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try{
-    //$conexion=mysqli_connect('localhost','root','','susy');
-    $conexion=mysqli_connect('localhost','root','secret','susy');
+    $conexion=mysqli_connect('localhost','root','','susy');
+    //$conexion=mysqli_connect('localhost','root','secret','susy');
 
 }catch(Exception $e) {
     die('No hay conexión a la base de datos');

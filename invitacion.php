@@ -2,8 +2,8 @@
 //esta línea nos evita mostrar errores tipo warning
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try{
-    //$conexion=mysqli_connect('localhost','root','','susy');
-    $conexion=mysqli_connect('localhost','root','secret','susy');
+    $conexion=mysqli_connect('localhost','root','','susy');
+   // $conexion=mysqli_connect('localhost','root','secret','susy');
 
 }catch(Exception $e) {
     die('No hay conexión a la base de datos');
@@ -17,10 +17,11 @@ try{
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/invitacion.css">
+        <link rel="stylesheet" href="./css/mediaquery.css" type="text/css">
         <title>Document</title>
     </head>
     <body>
-        <header></header>
+  
         <?php
         //print_r($_POST);
         $hayErrores=false;
@@ -62,34 +63,52 @@ try{
          $dia = date('d');
         ?>
 
-        <div>
+        <div class="fondo_boda">
+       
             <header class="heading-primary">
-                <h3 class="heading-primary-main">Bienvenido <?php echo $Usuario->nombre. ' '. $Usuario->apellido?>,</h3>
-                <p class="heading-primary-sub">Te invitamos a nuestros 25 años de Susy y Garo</p>
-                <p class="heading-primary-third">Recuerda que tienes <b><?php echo $Usuario->boletos_asignados?></b> boletos asignados</p>
+                <h3 class="flex_item1">Bienvenid@<?php echo $Usuario->nombre. ' '. $Usuario->apellido?>,</h3>
+                <div class="flex-parent">    
+                    <div clas="flex_item1">
+
+                        <p>Tienes <b><?php echo $Usuario->boletos_asignados?></b> boletos asignados</p>
+                    </div>
+                        
+            
+
+                <div class="flex_item1">
+                
                 <form action="confirmacion.php" method="post">
-                    Boletos: <select name="boletos_confirmados">
-                       <?php for($i=0;$i<= $Usuario->boletos_asignados; $i++){?>
-                           <option value="<?php echo $i?>"><?php echo $i?></option>
-                        <?php }?>
-                    </select>
-                   <input type="hidden" name="id" value="<?php echo $Usuario->id?>">
-                   <button type="submit">Confirmar</button>
-                 </form>
+                    Confirma tus boletos, recuerda que puedes cambiar la cantidad de boletos máximo 3 veces <br> Fecha limite para realizar cambios, 1 de octubre:<select name="boletos_confirmados">
+                        </div>
+                        <?php for($i=0;$i<= $Usuario->boletos_asignados; $i++){?>
+                            
+                            <div class="flex_item1">
+                                
+                                <option value="<?php echo $i?>"><?php echo $i?></option>
+                                <?php }?>
+                            </div>
+                        </select>
+                        <input type="hidden" name="id" value="<?php echo $Usuario->id?>">
+                        <button type="submit">Confirmar</button>
+                        
+                    </form>
+                    
+                </div>
+                
             </header>
         </div>
         <?php }?>
 
 <?php
- mysqli_close($conexion);
-    /*
-    if($Usuario->total_confirmaciones<3){
-        $sql="update Usuarios set total_confirmaciones = total_confirmaciones+1 where id =".$Usuario->id;
-        $resultado=$conexion->query($sql);
-        echo "Gracias por confirmar";
-    }else{
-        echo "Ya no puedes confirmar";
-    }
+/* 
+mysqli_close($conexion);
+
+if($Usuario->total_confirmaciones<3){
+    $sql="update Usuarios set total_confirmaciones = total_confirmaciones+1 where id =".$Usuario->id;
+    $resultado=$conexion->query($sql);
+    echo "Gracias por confirmar";
+}else{
+    echo "Ya no puedes confirmar";
 
 }
 */
@@ -103,6 +122,8 @@ try{
      }
     })
    </script>
+
+ 
 
 
 

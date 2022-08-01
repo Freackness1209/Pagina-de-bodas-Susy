@@ -11,15 +11,23 @@
     <link rel="icon" type="image/png" href="./img/icons/Logo_susy_garo.png">
     <script type="text/javascript" src="./index.js"></script>
     <link rel="stylesheet" href="./invitacion.html">
-
+    <!--Slider--->
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<!-- Slider --> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<!-- Moment -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+    
 
 
 </head>
@@ -38,96 +46,66 @@
 </div>
 
 <header>
+<div class="hola">
 
-    <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/1.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/2.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/3.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/4.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/5.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/6.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/7.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/8.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/9.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/11.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/12.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/13.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/bryan-ajustadas/14.jpg" alt=""></div>
-
-
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/12..jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/13..jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/14..jpg" alt=""></div>
-    <div class="swiper-slide"><img src="./img/fotos_ajustadas_slider/15.jpg" alt=""></div>
-    
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
+    <div id="slider">
+        <div class="galeria">
+        
+            <div><img src="./img/bryan-ajustadas/1.jpg" ></div>
+            <div><img src="./img/bryan-ajustadas/2.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/3.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/4.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/5.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/6.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/7.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/8.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/9.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/10.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/11.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/12.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/13.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/14.jpg"></div>
+        </div>
+    </div>
 </div>
-   
-  
+<style>
+  .hola{
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
--->
+      max-width: 900px;
+      margin: 0px auto;
+      max-height:800px;
+      margin-top: 0px;
+      margin-bottom:0px;
+      padding: 5px;
+      background: ;
+      box-shadow: 0 1.8rem 4rem #000;
+    }
+  header{
+      background:  rgba(112, 123, 124, .2);
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a{
+      display:none;
+  }
+</style>
 <script>
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+$(document).ready(function(){ 
+      $('.galeria').bxSlider({
+	    mode: 'horizontal',
+	    captions: false,
+	    slideWidth: 1000,
+	    responsive: true,
+	    pager: true,
+        auto:true,
+        adaptiveHeight:true,
+        speed: 500,
+        controls:false
+        
+	  });
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
+    });
 
 </script>
-       
-<style>
-    .swiper{
-        height: 100%;
-        width:100%;
-    }
-    .swiper-slide{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        height:100%;
-        width:100%;
-        
-    }
-</style>
-
-   
-    
 </header>
 
 
