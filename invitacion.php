@@ -41,7 +41,7 @@ try{
 
     if($resultado->num_rows==0){
         $hayErrores=true;
-        $mensajeError="La persona no existe";
+        $mensajeError="No estás registadro";
 
     }
     if(!$hayErrores){
@@ -53,10 +53,12 @@ try{
 
     <?php if($hayErrores){ ?>
         <div>
-            <header class="heading-primary">
-                Se encontraron errores: <?php echo $mensajeError;?>
+            <h1>
+                
+                <?php echo $mensajeError;?>
                 <a href="index.php">Da click aqui para intentarlo de nuevo</a>
-            </header>
+            </h1>
+            
         </div>
     <?php } else {
          $mes = date('m');

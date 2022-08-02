@@ -60,7 +60,7 @@ header{
 
 .img0{
     background: url(../img/img/marmol2.jpg);
-    min-height: 50vh;
+    min-height: 35vh;
 }
 .img2{
     background: url(../img/img/marmol.jpg);
@@ -101,15 +101,28 @@ header{
     justify-content: center;
     align-items: center;
     align-content: flex-start;
-    width:100%;
-    padding-top: 300px;
+    height: 80vh;
     overflow: auto;
     flex-direction: column;
-    padding-left: 33%;
-    
-    
- 
+
 }
+.heading-primary span{
+    max-width: 600px;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    text-shadow: 0 0 0.93rem #000;
+    margin: 30px;
+}
+/*
+.heading-primary-main{
+    font-size: 68px;
+}
+.heading-primary-sub{
+    font-size: 35px;
+}
+
 .heading-primary-main
 {
     padding-left: 6%;
@@ -124,7 +137,7 @@ header{
     animation-name: moveInLeft;
     animation-duration: 4s;
     
-
+    
 }
 
 
@@ -139,9 +152,10 @@ header{
     letter-spacing: 0.5rem;
     animation-name: moveInRight;
     animation-duration: 6s;
-  
+    
     
 }
+*/
 
     
 /*Animaciones*/
@@ -174,14 +188,10 @@ header{
 .main{
     position: relative;
     font-family: "Castellar";
-    background-image: linear-gradient(to right bottom, 
-    rgba(112, 123, 124, .8),
-    rgba(229,231,233, .5)),
-    url(./img/marmol2.jpg);
-    
-    background-size: cover;
-    background-position: top;
-    
+  background: linear-gradient(to right bottom, 
+  rgba(112, 123, 124, .1),
+  rgba(229,231,233, .1)),
+  url(./img/0.jpg);
     /* clip-path: polygon(0 0, 100% 0, 100% 100vh , 0 80%);*/
 }
 
@@ -395,6 +405,14 @@ footer{
 
 
 }
+.footer_formulario{
+    padding: 30px;
+      background: white;
+      padding: 50px;
+      border-radius:5%;
+      padding-top: 65px;
+  
+  }
 
 
 .consigue_invitacion{
@@ -403,12 +421,13 @@ footer{
     font-size: 35px;
     
     
+    
 }
 .inputBox{
     position: relative;
     width: 250px;
-    top: -25px;
-    left: -52px;
+    top: -20px;
+    left: -32px;
     
     
     
@@ -419,10 +438,15 @@ footer{
     
 
 }
+
 .inputBox h1{
-    padding-bottom: 1.3rem;
+    display: flex;
+    padding-bottom: 1.4rem;
+
+    
     
 }
+
 .inputBox input{
     width: 100%;
     padding: 10px;
@@ -436,6 +460,7 @@ footer{
     
 
 }
+
 
 .inputBox span{
     position: absolute;
@@ -495,11 +520,7 @@ footer{
     */
     border: 1px solid #696969;
 }
-form{
-    background: white;
-    padding: 60px;
-    border-radius:5% ;
-}
+
 /*
 footer img{
     width: 35rem;
@@ -755,3 +776,52 @@ transition: all 0.8s;
 .swiper .swiper-slide img{
  width: 100%;       
 }
+
+.Footer_flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-start;
+    overflow: auto;
+    height: 90vh;
+    flex-direction: row;
+    background: linear-gradient(to right bottom, 
+    rgba(112, 123, 124, .1),
+    rgba(229,231,233, .1)),
+    url(./img/0.jpg);
+    
+
+}
+
+.Footer_flex div{
+    
+    z-index: 10;
+    margin: 10px;
+    
+}
+
+.Footer_flex div img{
+    width: 400px;
+    height: 300px;
+    margin: 50px;
+    z-index: 20;
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 4rem #000 .9;
+    outline: .4rem solid;
+    
+    
+}
+
+.photo_absolute{
+    position: absolute;
+    z-index: 20;
+width: 400px;
+height: 300px;
+transform: scale(1.05);
+outline: .4rem solid;
+transform: translate(10px, 50px);
+
+
+}
+

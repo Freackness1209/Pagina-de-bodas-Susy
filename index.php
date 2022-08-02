@@ -7,7 +7,7 @@
     <title>Bodas de Plata Susy y Garo</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link rel="stylesheet" href="./css/fonts.css" type="text/css">
-    <link rel="stylesheet" href="./mediaquery.css" type="text/css">
+    <link rel="stylesheet" href="./css/mediaquery.css" type="text/css">
     <link rel="icon" type="image/png" href="./img/icons/Logo_susy_garo.png">
     <script type="text/javascript" src="./index.js"></script>
     <link rel="stylesheet" href="./invitacion.html">
@@ -182,31 +182,59 @@ Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo�
  
 
      <footer>
+     <div> <img src="./img/fotos_sin_ajustar/foto.jpg" alt="photo 1" class="photo_absolute"></div>
+     <section class='Footer_flex'>
+     <form action="invitacion.php" method="POST" class="footer_formulario"><div> 
+                         
+                         
+                         <div class="inputBox">
+                             <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
+                             
+                             <input type="text" required="required" name="nombre" >
+                             <span>Nombre</span>
+                             </div>
+                            <br>
+                            <div class="inputBox">
+                                
+                                <input type="text" required="required" name="apellido">
+                                <span>Apellido</span>
+                                
+                            </div>
+                            <button type="submit" class="btn-outline">Enviar</button>  
+                         </div>
+                         
+                         </form>
+          
+            
+        </section>
+         <!--
 
-     <div class="col-1-of-2">
-         <div class="composition">
-         <img src="./img/fotos_sin_ajustar/foto.jpg" alt="photo 1" class="composition_photo composition_photo_p1">
-         <form action="invitacion.php" method="POST" class="composition_photo composition_photo_p2">
-            
-            
-            <div class="inputBox">
-                <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
-                
-                <input type="text" required="required" name="nombre">
-                <span>Nombre</span>
-            </div>
-            <br>
-            <div class="inputBox">
-                
-                <input type="text" required="required" name="apellido">
-                <span>Apellido</span>
-                
-            </div>
-            <button type="submit" class="btn-outline">Enviar</button>  
-        </form>  
-         
-         </div>
-    </div>
+             
+             <div class="col-1-of-2">
+                 <div class="composition">
+                     <img src="./img/fotos_sin_ajustar/foto.jpg" alt="photo 1" class="composition_photo composition_photo_p1">
+                     <form action="invitacion.php" method="POST" class="composition_photo composition_photo_p2">
+                         
+                         
+                         <div class="inputBox">
+                             <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
+                             
+                             <input type="text" required="required" name="nombre">
+                             <span>Nombre</span>
+                            </div>
+                            <br>
+                            <div class="inputBox">
+                                
+                                <input type="text" required="required" name="apellido">
+                                <span>Apellido</span>
+                                
+                            </div>
+                            <button type="submit" class="btn-outline">Enviar</button>  
+                        </form>  
+                        
+                    </div>
+                </div>
+            -->
 <!--
 
     
@@ -255,7 +283,7 @@ Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo�
             <input type="submit" >        
         </form>        
     -->
--->
+
 </footer>
 
     

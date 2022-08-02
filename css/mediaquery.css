@@ -18,11 +18,56 @@
 
 /*Extra large devices*/
 @media only screen and (min-width:1200px){
-    
-
+    .heading-primary-main{
+        font-size: 70px;
+    }
+    .heading-primary-sub{
+        font-size: 37px;
+    }
+    .Footer_flex{
+        height: 80vh;
+    }
+    .photo_absolute{
+      display: none;
+    }
+    /*Titulo del formulario en el footer*/
+    .consigue_invitacion{
+        font-size: 38px;
+    }
+    .inputBox input{
+        padding: 11px;
+    }
+.footer_formulario{
+    padding: 50px;
+}
 }
 /*Large devices*/
 @media only screen and (min-width:920px){ 
+    .heading-primary-main{
+        font-size: 71px;
+
+
+    }
+    .heading-primary-sub{
+        font-size: 35px;
+    }
+    .Footer_flex{
+        height: 70vh;
+    }
+    .photo_absolute{
+        display: none;
+    }
+
+    /*-------Titulo del formulario en el footer--------*/
+    .consigue_invitacion{
+        font-size: 35px;
+    }
+    .inputBox input{
+        padding: 10px;
+    }
+    .footer_formulario{
+        padding: 46px;
+    }
    
 }
 
@@ -31,20 +76,98 @@
 /*Medium devices*/
 @media only screen and (min-width:768px){
    
-  
+    .heading-primary-main{
+        font-size: 66px;
+
+    }
+    .heading-primary-sub{
+        font-size: 30px;
+    }
+    .Footer_flex{
+        height: 70vh;
+    }
+    .photo_absolute{
+        display: none;
+    }
+   /*Titulo del formulario en el footer*/
+   .consigue_invitacion{
+    font-size: 32px;
+}
+.inputBox input{
+    padding: 8px;
+}
+.footer_formulario{
+    padding: 42px;
+}
 
 }
 /*Small devices*/
 
 
 @media only screen and (min-width:600px) {
-    
+    .heading-primary-main{
+        font-size: 60px;
+        
+
+    }
+    .heading-primary-sub{
+        font-size: 28px;
+        
+    }
+    .Footer_flex{
+        height: 70vh;
+    }
+    .photo_absolute{
+        display: none;
+        
+            
+            
+        
+    }
+   
+   .consigue_invitacion{
+    font-size: 29px;
+}
+.inputBox input{
+    padding: 7px;
+}
+.footer_formulario{
+    padding: 38px;
+}
   
 }
 /*Extra small devices*/
 @media only screen and (max-width:600px) {
-   
-   
+    
+    .heading-primary-main{
+        font-size: 40px;
+        
+
+    }
+    .heading-primary-sub{
+        font-size: 13px;
+    }
+    .Footer_flex{
+        height: 70vh;
+    }
+    
+    .photo_absolute{
+   display: none;
+        
+        
+    }
+
+    
+    .consigue_invitacion{
+        font-size: 25px;
+    }
+   .inputBox input{
+       padding: 6px;
+   }
+   .footer_formulario{
+    padding: 35px;
+}
+
 }
 
 
