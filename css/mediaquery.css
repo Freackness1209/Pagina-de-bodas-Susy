@@ -14,7 +14,7 @@
     }
 }
 */
-    
+
 
 /*Extra large devices*/
 @media only screen and (min-width:1200px){
@@ -42,7 +42,7 @@
 }
 }
 /*Large devices*/
-@media only screen and (min-width:920px){ 
+@media only screen and (min-width:920px){
     .heading-primary-main{
         font-size: 71px;
 
@@ -68,14 +68,14 @@
     .footer_formulario{
         padding: 46px;
     }
-   
+
 }
 
 
 
 /*Medium devices*/
 @media only screen and (min-width:768px){
-   
+
     .heading-primary-main{
         font-size: 66px;
 
@@ -105,26 +105,30 @@
 
 
 @media only screen and (min-width:600px) {
+    .flex_container_center{
+        flex-direction: row;
+    }
+
     .heading-primary-main{
         font-size: 60px;
-        
+
 
     }
     .heading-primary-sub{
         font-size: 28px;
-        
+
     }
     .Footer_flex{
         height: 70vh;
     }
     .photo_absolute{
         display: none;
-        
-            
-            
-        
+
+
+
+
     }
-   
+
    .consigue_invitacion{
     font-size: 29px;
 }
@@ -134,14 +138,14 @@
 .footer_formulario{
     padding: 38px;
 }
-  
+
 }
 /*Extra small devices*/
 @media only screen and (max-width:600px) {
-    
+
     .heading-primary-main{
         font-size: 40px;
-        
+
 
     }
     .heading-primary-sub{
@@ -150,14 +154,14 @@
     .Footer_flex{
         height: 70vh;
     }
-    
+
     .photo_absolute{
    display: none;
-        
-        
+
+
     }
 
-    
+
     .consigue_invitacion{
         font-size: 25px;
     }
@@ -171,4 +175,4 @@
 }
 
 
-    
+

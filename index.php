@@ -16,18 +16,18 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-    
+
 	<!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<!-- Slider --> 
+<!-- Slider -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 <!-- Moment -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
-    
+
 
 
 </head>
@@ -42,7 +42,7 @@
     </div>
 
     <div class="img0">
-   
+
 </div>
 
 <header>
@@ -50,7 +50,7 @@
 
     <div id="slider">
         <div class="galeria">
-        
+
             <div><img src="./img/bryan-ajustadas/1.jpg" ></div>
             <div><img src="./img/bryan-ajustadas/2.jpg"></div>
             <div><img src="./img/bryan-ajustadas/3.jpg"></div>
@@ -89,7 +89,7 @@
 </style>
 <script>
 
-$(document).ready(function(){ 
+$(document).ready(function(){
       $('.galeria').bxSlider({
 	    mode: 'horizontal',
 	    captions: false,
@@ -100,7 +100,7 @@ $(document).ready(function(){
         adaptiveHeight:true,
         speed: 500,
         controls:false
-        
+
 	  });
 
     });
@@ -110,12 +110,12 @@ $(document).ready(function(){
 
 
 <div class="img2">
-   
+
 </div>
-     
+
 
          <section class="magic">
-             
+
          <section class="magic_main">
             <div class="magic_title">Lo mágico de las bodas de plata</div>
             <div class="magic_content">Estar  enamorado hoy en día de la misma persona por muchos años cada vez es más difícil, más aun en estos nuevos tiempos donde la vida es muy acelerada y desordenada, de hecho encontrar una pareja unida más de 10 años es casi un lujo en esta nueva época.
@@ -124,18 +124,18 @@ Para llegar a los 25 años de casado, antes hay que pasar por las bodas de hierr
 </div>
             <div class="magic_bold">Es fácil amar a alguien cuando todo es perfecto. Mantener ese amor en los momentos imperfectos es lo que hace un amor incondicional.</div>
         </section>
-    
+
     </section>
     <div class="img2">
         <h1 class="heading-primary-img heading-primary">
-  
-            
+
+
           </h1>
 </div>
 
 
 
-    
+
     <section class="main">
 
 
@@ -144,16 +144,20 @@ Para llegar a los 25 años de casado, antes hay que pasar por las bodas de hierr
 
 </div>
 <section class='FlexContainer'>
-            <div><img src="./img/img/hoja_1.png" alt="" class="hoja1"></div>
-            <div>El tiempo es muy sabio, cuando dos personas se encuentran en el momento exacto y resulta que no es casualidad, que se estaban esperando toda la vida.</div>
-           
-<section class='flex_container_center'>
-            <div><img src="./img/fotos_ajustadas_slider/0.jpg" alt=""></div>
-            <div class="flex_item_center">Susana <br> y <br> Edgardo <br> Sábado 05 Noviembre
-               
-            </div>
-            <div><img src="./img/fotos_ajustadas_slider/00.jpg" alt=""></div>
-        </section>
+    <div><img src="./img/img/hoja_1.png" alt="" class="hoja1"></div>
+    <div>El tiempo es muy sabio, cuando dos personas se encuentran en el momento exacto y resulta que no es casualidad, que se estaban esperando toda la vida.</div>
+
+    <section class='flex_container_center'>
+        <div>
+            <img src="./img/fotos_ajustadas_slider/0.jpg" alt="">
+        </div>
+        <div class="flex_item_center">
+            Susana <br> y <br> Edgardo <br> Sábado 05 Noviembre
+        </div>
+        <div>
+            <img src="./img/fotos_ajustadas_slider/00.jpg" alt="">
+        </div>
+    </section>
 
 </section>
 
@@ -167,126 +171,126 @@ Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo�
 
             </section>
 
-      
 
-    
+
+
     </section>
 
 
     <div class="img3">
         <h1 class="heading-primary-img heading-primary">
-            
-            
+
+
           </h1>
 </div>
- 
+
 
      <footer>
      <div> <img src="./img/fotos_sin_ajustar/foto.jpg" alt="photo 1" class="photo_absolute"></div>
      <section class='Footer_flex'>
-     <form action="invitacion.php" method="POST" class="footer_formulario"><div> 
-                         
-                         
+     <form action="invitacion.php" method="POST" class="footer_formulario"><div>
+
+
                          <div class="inputBox">
                              <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
-                             
+
                              <input type="text" required="required" name="nombre" >
                              <span>Nombre</span>
                              </div>
                             <br>
                             <div class="inputBox">
-                                
+
                                 <input type="text" required="required" name="apellido">
                                 <span>Apellido</span>
-                                
+
                             </div>
-                            <button type="submit" class="btn-outline">Enviar</button>  
+                            <button type="submit" class="btn-outline">Enviar</button>
                          </div>
-                         
+
                          </form>
-          
-            
+
+
         </section>
          <!--
 
-             
+
              <div class="col-1-of-2">
                  <div class="composition">
                      <img src="./img/fotos_sin_ajustar/foto.jpg" alt="photo 1" class="composition_photo composition_photo_p1">
                      <form action="invitacion.php" method="POST" class="composition_photo composition_photo_p2">
-                         
-                         
+
+
                          <div class="inputBox">
                              <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
-                             
+
                              <input type="text" required="required" name="nombre">
                              <span>Nombre</span>
                             </div>
                             <br>
                             <div class="inputBox">
-                                
+
                                 <input type="text" required="required" name="apellido">
                                 <span>Apellido</span>
-                                
+
                             </div>
-                            <button type="submit" class="btn-outline">Enviar</button>  
-                        </form>  
-                        
+                            <button type="submit" class="btn-outline">Enviar</button>
+                        </form>
+
                     </div>
                 </div>
             -->
 <!--
 
-    
-    
+
+
     <div class='Flex_footer'>
         <div class="Flex_footer_item1">  <form action="invitacion.php" method="POST">
-            
-            
+
+
             <div class="inputBox">
                 <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
-                
+
                 <input type="text" required="required" name="nombre">
                 <span>Nombre</span>
             </div>
             <br>
             <div class="inputBox">
-                
+
                 <input type="text" required="required" name="apellido">
                 <span>Apellido</span>
-                
+
             </div>
-            <button type="submit" class="btn-outline">Enviar</button>  
+            <button type="submit" class="btn-outline">Enviar</button>
         </form>        </div>
-        <div class="Flex_footer_item2"> 
+        <div class="Flex_footer_item2">
             </div>
             <img src="./img/fotos_ajustadas_slider/0.jpg" alt=""></div>
         </div>
         <!---
         <img src="./img/fotos_ajustadas_slider/0.jpg" alt="">
         <form action="invitacion.php" method="POST">
-            
-            
+
+
             <div class="inputBox">
                 <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
-                
+
                 <input type="text" required="required" name="nombre">
                 <span>Nombre</span>
             </div>
             <br>
             <div class="inputBox">
-                
+
                 <input type="text" required="required" name="apellido">
                 <span>Apellido</span>
-                
+
             </div>
-            <input type="submit" >        
-        </form>        
+            <input type="submit" >
+        </form>
     -->
 
 </footer>
 
-    
+
 
 </body>
 </html>

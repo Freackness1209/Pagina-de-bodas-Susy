@@ -2,18 +2,18 @@
     padding: 0;
     margin: 0rem;
     box-sizing: border-box;
-    
-} 
+
+}
 
 html, body{
     height: 100%;
     margin: 0;
-    
+
     color:#fff;
     line-height:0;
-    
-    
-    
+
+
+
 
  }
 @font-face {
@@ -28,7 +28,7 @@ html, body{
     font-family: "Castellar";
     src: url(../fuentes/castellar.ttf);
 }
- 
+
 @font-face {
     font-family: "OldEnglishFive";
     src: url(./fuentes/Old\ English\ Five.ttf);
@@ -37,13 +37,13 @@ header{
     /*
     height: 80vH;
     width: 100vh;
-    
+
     background-position: top;
     position: relative;
     */
-    
-    
-    
+
+
+
     /* clip-path: polygon(0 0, 100% 0, 100% 100vh , 0 80%);*/
 }
 /*
@@ -53,8 +53,8 @@ header{
     min-height: 90vh;
     background-size: cover;
     padding-bottom: 5%;
-    
-    
+
+
 
 }
 
@@ -69,7 +69,7 @@ header{
 .img3{
     background: url(../img/img/marmol.jpg);
     min-height: 50vh;
- 
+
 }
 .img1, .img2, .img3,.img0{
     position: relative;
@@ -84,18 +84,18 @@ header{
 .img2 section{
     height: 45vH;
     width: 148vh;
-    background-image: linear-gradient(to right bottom, 
-    
+    background-image: linear-gradient(to right bottom,
+
     rgba(112, 123, 124, .9),
     rgba(229,231,233, .8));
-    
+
     background-repeat: calc(3);
     background-size: cover;
     background-position: top;
     position: absolute;
 }
 .heading-primary{
-    
+
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -136,8 +136,8 @@ header{
     letter-spacing: 0.5rem;
     animation-name: moveInLeft;
     animation-duration: 4s;
-    
-    
+
+
 }
 
 
@@ -152,12 +152,12 @@ header{
     letter-spacing: 0.5rem;
     animation-name: moveInRight;
     animation-duration: 6s;
-    
-    
+
+
 }
 */
 
-    
+
 /*Animaciones*/
 
 @keyframes moveInLeft{
@@ -166,7 +166,7 @@ header{
         /*transform: translateX(-100px);*/
     }
     80%{
-        
+
     }
     100%{
         opacity: 1;
@@ -188,7 +188,7 @@ header{
 .main{
     position: relative;
     font-family: "Castellar";
-  background: linear-gradient(to right bottom, 
+  background: linear-gradient(to right bottom,
   rgba(112, 123, 124, .1),
   rgba(229,231,233, .1)),
   url(./img/0.jpg);
@@ -198,7 +198,7 @@ header{
 
 
 .flex_container{
-    
+
 display: flex;
     justify-content: space-around;
     z-index: 2;
@@ -208,7 +208,7 @@ display: flex;
 .composition__photo--p2{
     border-radius: 50%;
     top: 70px;
-    
+
 }
 .composition__photo--p2{
     left: 100px;
@@ -216,16 +216,16 @@ display: flex;
 .composition__photo--p3{
     left: 1rem;
     top:  5rem;
-    
+
 
 }
 
-   
+
 
 .composition__photo--p4{
     left: 31rem;
     top: 1rem;
-    
+
 
 }
 .composition__photo--p1:hover,
@@ -243,7 +243,7 @@ display: flex;
     top: 27%;
     right: 30%;
 
-    
+
     width: 40%;
     text-align: justify;
 }
@@ -256,7 +256,7 @@ display: flex;
     top: 41%;
     right: 15.6%;
 
-    
+
     width: 40%;
     text-align: justify;
 }
@@ -275,19 +275,19 @@ display: flex;
   #slider ul li {
       position: relative;
       height: 100%;
-      
+
       float: left;
     }
     #slider ul li img{
     width: 48.25rem;
     height: 25rem;
-    
-    
-    
+
+
+
 }
 
 #slider #prev, #slider #next {
-    
+
     line-height: 3.125rem;
     border-radius: 50%;
     font-size: 2rem;
@@ -302,15 +302,15 @@ display: flex;
 }
 #slider #prev {
     left: 0.625rem;
-    
+
     visibility: hidden;
-    
+
 }
 #slider #next {
     right: 0.625rem;
-    
+
     visibility: hidden;
-    
+
 }
 #slider #prev:hover, #slider #next:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -320,7 +320,7 @@ display: flex;
 .magic{
 
 
-    background: linear-gradient(to right bottom, 
+    background: linear-gradient(to right bottom,
     rgba(112, 123, 124, .1),
     rgba(229,231,233, .1)),
     url(./img/0.jpg);
@@ -329,17 +329,17 @@ display: flex;
 
 
 
-    
+
     background-repeat: calc(3);
     background-size: cover;
     background-position: top;
     position: relative;
     text-align: center;
     padding: 2rem;
-    
-   
-    
-    
+
+
+
+
 
 }
 
@@ -357,23 +357,23 @@ display: flex;
 
 
 .magic div {
-    
+
     color: black;
     margin: 5px;
-    
-    
+
+
 }
 .magic_title{
-    
+
     max-width:600px;
     height: 20%;
     font-size: 30px;
     font-family: "OldEnglishFive";
     padding-top: 4%;
     padding-bottom: 3%;
-    
-    
-    
+
+
+
 }
 .magic_content{
     max-width:600px;
@@ -391,16 +391,16 @@ display: flex;
 
 
 footer{
-    
-    
-    
+
+
+
     background-repeat: calc(3);
     background-size: cover;
     background-position: top;
     position: relative;
     text-align: center;
     line-height: 1.7;
-    
+
 
 
 
@@ -411,7 +411,7 @@ footer{
       padding: 50px;
       border-radius:5%;
       padding-top: 65px;
-  
+
   }
 
 
@@ -419,23 +419,23 @@ footer{
     color: black;
     background-color: white;
     font-size: 35px;
-    
-    
-    
+
+
+
 }
 .inputBox{
     position: relative;
     width: 250px;
     top: -20px;
     left: -32px;
-    
-    
-    
-    border-radius: 10%;
-    
-    
 
-    
+
+
+    border-radius: 10%;
+
+
+
+
 
 }
 
@@ -443,21 +443,21 @@ footer{
     display: flex;
     padding-bottom: 1.4rem;
 
-    
-    
+
+
 }
 
 .inputBox input{
     width: 100%;
     padding: 10px;
-     
+
     background: grey;
     border-radius: 5px;
     outline: none;
     color: #fff;
     font-size: 1rem;
     transition: 0.5s;
-    
+
 
 }
 
@@ -474,7 +474,7 @@ footer{
     */
     text-transform: uppercase;
     transition: 0.5s;
-    
+
 
 }
 .inputBox input:valid ~ span,
@@ -489,10 +489,10 @@ footer{
      /*
      background: #1d2b3a;
      */
-     
+
      background: #D3d3d3;
-     
-     
+
+
      border-left: 1px solid #000 ;
      border-right: 1px solid #000 ;
      letter-spacing: 0.2em;
@@ -500,20 +500,20 @@ footer{
 .inputBox:nth-child(2) input:valid ~ span,
 .inputBox:nth-child(2) input:focus ~ span{
     background: #00dfc4;
-    
-    
+
+
     /*
     color:#1d2b3a;
     */
     color: #696969;
     border-radius: 2px;
-    
+
 
 }
 /*
 #1d2b3a
 */
-.inputBox input:valid 
+.inputBox input:valid
 .inputBox input:focus{
     /*
     border: 1px solid #00dfc4;
@@ -526,7 +526,7 @@ footer img{
     width: 35rem;
     height: 32rem;
     left: -100px;
-    
+
   top: -10px;
   border: white 15px outset;
   border-radius: 1rem;
@@ -539,14 +539,10 @@ footer img{
     justify-content: center;
     align-items: center;
     align-content: flex-start;
-    overflow: auto;
     flex-direction: column;
     line-height: 1.6;
     background: none;
-    
- 
 
-    
 }
 
 .FlexContainer div {
@@ -554,7 +550,7 @@ footer img{
     max-width:600px ;
     padding: 25px;
     color: #000;
-margin: 5px;
+    margin: 5px;
 /*
 background-color: lightblue;
 */
@@ -569,7 +565,7 @@ background-color: lightblue;
      transform: rotate(10deg);
      width: 115%;
 
-    
+
 }
 .flex_container_down{
     display: flex;
@@ -577,13 +573,12 @@ background-color: lightblue;
     justify-content: flex-end;
     align-items: center;
     align-content: flex-start;
-    overflow: auto;
     text-align: center;
     flex-direction: column;
     line-height: 1.6;
     background: none;
 
-    
+
 }
 
 
@@ -599,8 +594,8 @@ background-color: lightblue;
     /*
     background-color: lightblue;
     */
-    
-    
+
+
 }
 
 
@@ -610,10 +605,9 @@ background-color: lightblue;
     justify-content: space-around;
     align-items: center;
     align-content: flex-start;
-    width: 95%;
-    height: 80vh;
     overflow: auto;
-    flex-direction: row;
+    flex-direction: column;
+    padding:100px 0
 }
 
 .flex_container_center div{
@@ -623,17 +617,17 @@ background-color: lightblue;
 
 
 .flex_container_center div:nth-child(odd){
-    
+
 transition: all 0.8s;
 
- 
+
 }
 .flex_container_center img{
     border-radius: 50%;
     transition: all 0.8s;
-    
-    
- 
+
+
+
 }
 .flex_item_center{
     flex-grow:2;
@@ -646,7 +640,7 @@ transition: all 0.8s;
     box-shadow: 0 3.5rem 4rem #000 1;
     outline: .4rem solid white;
 
- 
+
 }
 
 .swiper {
@@ -660,10 +654,10 @@ transition: all 0.8s;
     -webkit-transform: rotate(10deg);
     transform: rotate(10deg);
     width: 115%;
-    
-    
-    
- } 
+
+
+
+ }
 
  .fecha{
      color: #000;
@@ -688,8 +682,8 @@ transition: all 0.8s;
 
     padding-left: 17%;
     margin: 5px;
-    
-    
+
+
 }
 
 
@@ -702,7 +696,7 @@ transition: all 0.8s;
     position: relative;
     transition: .5s;
     cursor: pointer;
-    
+
 
 }
 .btn-outline:hover{
@@ -736,11 +730,11 @@ transition: all 0.8s;
     height: calc(100% + 8px);
 }
 
-    
+
 
 .composition{
     position: relative;
-   
+
 }
 .composition_photo{
     width: 30%;
@@ -749,9 +743,9 @@ transition: all 0.8s;
     position: absolute;
     z-index: 10;
     transition: all .5s;
-    
 
-    
+
+
 }
 .composition_photo_p1{
  left: 40rem;
@@ -764,17 +758,17 @@ transition: all 0.8s;
     text-align: center;
     left: 20rem;
     top:10rem;
-   
+
 }
 
 .composition_photo_p1:hover{
     transform: scale(1.04);
     box-shadow: 0 1.8rem 4rem #000;
-    
+
 }
 
 .swiper .swiper-slide img{
- width: 100%;       
+ width: 100%;
 }
 
 .Footer_flex{
@@ -786,19 +780,19 @@ transition: all 0.8s;
     overflow: auto;
     height: 90vh;
     flex-direction: row;
-    background: linear-gradient(to right bottom, 
+    background: linear-gradient(to right bottom,
     rgba(112, 123, 124, .1),
     rgba(229,231,233, .1)),
     url(./img/0.jpg);
-    
+
 
 }
 
 .Footer_flex div{
-    
+
     z-index: 10;
     margin: 10px;
-    
+
 }
 
 .Footer_flex div img{
@@ -809,8 +803,8 @@ transition: all 0.8s;
     transform: scale(1.05);
     box-shadow: 0 2.5rem 4rem #000 .9;
     outline: .4rem solid;
-    
-    
+
+
 }
 
 .photo_absolute{
