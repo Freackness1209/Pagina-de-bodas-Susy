@@ -105,6 +105,7 @@ header{
     overflow: auto;
     flex-direction: column;
 
+
 }
 .heading-primary span{
     max-width: 600px;
@@ -115,6 +116,7 @@ header{
     text-shadow: 0 0 0.93rem #000;
     margin: 30px;
 }
+
 /*
 .heading-primary-main{
     font-size: 68px;
@@ -637,8 +639,7 @@ transition: all 0.8s;
 
 .flex_container_center div:nth-child(odd):hover img {
     transform: scale(1.05);
-    box-shadow: 0 3.5rem 4rem #000 1;
-    outline: .4rem solid white;
+  
 
 
 }
@@ -771,14 +772,49 @@ transition: all 0.8s;
  width: 100%;
 }
 
+.container_img_main{
+    position: relative;
+    min-width:600px ;
+    height: 300px;
+    background: linear-gradient(to right bottom, rgba(112, 123, 124, .1), rgba(229,231,233, .4)), url(./img/0.jpg);
+  
+
+}
+
+.container_img_sub{
+    position: relative;
+    margin: 0 auto;
+    max-width:200px ;
+    height: 300px;
+    background: linear-gradient(to right bottom, rgba(112, 123, 124, .1), rgba(229,231,233), .), url(./img/0.jpg);
+    
+}
+.photo_absolute{
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    top: 20px;
+    box-shadow: 0 2.5rem 4rem #000 .9;
+    border: 2px solid #cfcfcf;
+    outline-style: double;
+
+    transition: 1.5s;
+    z-index: 30;
+}
+
+.photo_absolute:hover{
+    transform: scale(1.05);
+    outline-style: none;
+    border: none;
+    
+
+}
 .Footer_flex{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-end;
     align-content: flex-start;
-    overflow: auto;
-    height: 90vh;
     flex-direction: row;
     background: linear-gradient(to right bottom,
     rgba(112, 123, 124, .1),
@@ -794,28 +830,8 @@ transition: all 0.8s;
     margin: 10px;
 
 }
-
+/*
 .Footer_flex div img{
-    width: 400px;
-    height: 300px;
-    margin: 50px;
-    z-index: 20;
-    transform: scale(1.05);
-    box-shadow: 0 2.5rem 4rem #000 .9;
-    outline: .4rem solid;
 
 
-}
-
-.photo_absolute{
-    position: absolute;
-    z-index: 20;
-width: 400px;
-height: 300px;
-transform: scale(1.05);
-outline: .4rem solid;
-transform: translate(10px, 50px);
-
-
-}
-
+*/

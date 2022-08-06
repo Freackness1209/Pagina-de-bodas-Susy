@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" href="./img/icons/Logo_susy_garo.png">
     <script type="text/javascript" src="./index.js"></script>
     <link rel="stylesheet" href="./invitacion.html">
+
     <!--Slider--->
     <link
   rel="stylesheet"
@@ -28,10 +29,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
 
-
-
-</head>
-<body>
 
 
         <div class="img1">
@@ -186,7 +183,12 @@ Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo�
 
 
      <footer>
-     <div> <img src="./img/fotos_sin_ajustar/foto.jpg" alt="photo 1" class="photo_absolute"></div>
+         <div class="container_img_main">
+             <div class="container_img_sub">
+                 <img src="./img/fotos_sin_ajustar/foto.jpg" alt="photo 1" class="photo_absolute">
+                </div>
+            </div>
+     
      <section class='Footer_flex'>
      <form action="invitacion.php" method="POST" class="footer_formulario"><div>
 
