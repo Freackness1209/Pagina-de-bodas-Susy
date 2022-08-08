@@ -636,10 +636,10 @@ transition: all 0.8s;
 .flex_item_center{
     flex-grow:2;
     line-height: 4;
-    font-size: 30px;
+    
 }
 .flex_container_center div{
-    font-size: 28px;
+    font-size: 32px;
 }
 
 .flex_container_center div:nth-child(odd):hover img {
@@ -779,7 +779,7 @@ transition: all 0.8s;
 
 .container_img_main{
     position: relative;
-    max-width:600px ;
+    min-width:600px ;
     height: 300px;
     background: linear-gradient(to right bottom, rgba(112, 123, 124, .1), rgba(229,231,233, .4)), url(./img/0.jpg);
   
