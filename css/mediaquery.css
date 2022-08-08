@@ -66,6 +66,12 @@
     .heading-primary-sub{
         font-size: 13px;
     }
+    .flex_container_center img{
+        width: 250px;
+    }
+    .flex_container_center div{
+        font-size: 28px;
+    }
     .confirma{
         font-size: 10px;
     }
@@ -73,17 +79,19 @@
         font-size: 15px;
        }
 .FlexContainer .hoja1{
-    width:380px;
+    width:360px;
 }
 .hoja2{
-    width:380px;
+    width:360px;
 }
   
     .photo_absolute{
         
-        width: 220px;
-        height: 190px;
-        top: 120px;
+        width: 180px;
+        height: 180px;
+        top: 136px;
+        right: 10px;
+        
       
     }
 
@@ -102,7 +110,7 @@
 /*Small devices*/
 
 
-@media only screen and (min-width:605px) {
+@media only screen and (min-width:600px) {
     .flex_container_center{
         flex-direction: column;
     }
@@ -112,10 +120,14 @@
 
 
     }
+    .flex_container_center img{
+        width: 400px;
+    }
     .heading-primary-sub{
         font-size: 28px;
 
     }
+    
    
   
 

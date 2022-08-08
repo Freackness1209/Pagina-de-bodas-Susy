@@ -4,10 +4,7 @@ margin: 0;
 
 
 }
-@font-face {
-    font-family: "OldEnglishFive";
-    src: url(./fuentes/Old\ English\ Five.ttf);
-}
+
 body{background: white}
 .invitacion{max-width: 800px; margin: 20px auto 0 auto}
 .invitacion img {width: 100%}

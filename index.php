@@ -146,13 +146,13 @@ Para llegar a los 25 años de casado, antes hay que pasar por las bodas de hierr
 
     <section class='flex_container_center'>
         <div>
-            <img src="./img/fotos_ajustadas_slider/0.jpg" alt="">
+            <img src="./img/fotos_ajustadas_slider/tio1.jpeg" alt="">
         </div>
         <div class="flex_item_center">
-            Susana <br> y <br> Edgardo <br> Sábado 05 Noviembre
+            Susana <br> y <br> Edgardo <br> Sábado 05 de Noviembre
         </div>
         <div>
-            <img src="./img/fotos_ajustadas_slider/00.jpg" alt="">
+            <img src="./img/fotos_ajustadas_slider/tia2.jpeg" alt="">
         </div>
     </section>
 
@@ -160,7 +160,7 @@ Para llegar a los 25 años de casado, antes hay que pasar por las bodas de hierr
 
 <section class="flex_container_down">
 <div>
-Si, a pesar de los recortes, la crisis, el IVA…..y toda la que está cayendo…
+Si, a pesar de los recortes, la crisis, el IVA y pasar juntos toda la pandemia...
 </div>
             <div>Lo logramos!</div>
             <div>Y con gran júbilo tenemos el agrado de invitarlos junto con nuestros hijos Jonathan y Cristian a compartir con ustedes nuestras bodas de plata.</div>

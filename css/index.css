@@ -616,11 +616,10 @@ background-color: lightblue;
 
 .flex_container_center div{
     background: none;
+    font-size: 35px;
    
 }
-.flex_container_center div{
-    font-size: 35px;
-}
+
 
 
 
@@ -783,7 +782,6 @@ transition: all 0.8s;
 
 .container_img_main{
     position: relative;
-    min-width:600px ;
     height: 300px;
     background: linear-gradient(to right bottom, rgba(112, 123, 124, .1), rgba(229,231,233, .4)), url(./img/0.jpg);
   
