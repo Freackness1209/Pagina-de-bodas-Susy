@@ -77,7 +77,7 @@ try{
                        
                        
                        <header class="heading-primary">
-                           <h3 class="flex_item1">Bienvenid@<?php echo $Usuario->nombre. ' '. $Usuario->apellido?>,</h3>
+                           <h3 class="flex_item1">Bienvenid@ <?php echo $Usuario->nombre. ' '. $Usuario->apellido?>,</h3>
                         </div>
                         <img class="invitacion-header shadow-lg" src="./img/invitacion/invitacion-header.jpg">
                        

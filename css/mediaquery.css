@@ -14,133 +14,32 @@
     }
 }
 */
-/*super extra large devices*/
 
+/*Tiny devices*/
+@media only screen and (max-width:370px) {
 
-/*Extra large devices*/
-@media only screen and (min-width:1600px){
     .heading-primary-main{
-        font-size: 75px;
-    }
-    .heading-primary-sub{
         font-size: 40px;
+
+
+    }
+    .heading-primary-sub{
+        font-size: 13px;
     }
    
-    /*Titulo del formulario en el footer*/
+
     .consigue_invitacion{
-        font-size: 38px;
+        font-size: 25px;
     }
-    .inputBox input{
-        padding: 11px;
-    }
-.footer_formulario{
-    padding: 50px;
-}
-}
-
-
-
-
-/*Extra large devices*/
-@media only screen and (min-width:1200px){
-    .heading-primary-main{
-        font-size: 75px;
-    }
-    .heading-primary-sub{
-        font-size: 40px;
-    }
-   
-    /*Titulo del formulario en el footer*/
-    .consigue_invitacion{
-        font-size: 38px;
-    }
-    .inputBox input{
-        padding: 11px;
-    }
-.footer_formulario{
-    padding: 50px;
-}
-}
-/*Large devices*/
-@media only screen and (min-width:920px){
-    .heading-primary-main{
-        font-size: 71px;
-
-
-    }
-    .heading-primary-sub{
-        font-size: 35px;
-    }
- 
-    /*-------Titulo del formulario en el footer--------*/
-    .consigue_invitacion{
-        font-size: 35px;
-    }
-    .inputBox input{
-        padding: 10px;
-    }
-    .footer_formulario{
-        padding: 46px;
-    }
-
-}
-
-
-
-/*Medium devices*/
-@media only screen and (min-width:768px){
-
-    .heading-primary-main{
-        font-size: 66px;
-
-    }
-    .heading-primary-sub{
-        font-size: 30px;
-    }
-    
-   /*Titulo del formulario en el footer*/
-   .consigue_invitacion{
-    font-size: 32px;
-}
-.inputBox input{
-    padding: 8px;
-}
-.footer_formulario{
-    padding: 42px;
+   .inputBox input{
+       padding: 6px;
+   }
+   .footer_formulario{
+    padding: 35px;
 }
 
 }
-/*Small devices*/
 
-
-@media only screen and (min-width:600px) {
-    .flex_container_center{
-        flex-direction: row;
-    }
-
-    .heading-primary-main{
-        font-size: 60px;
-
-
-    }
-    .heading-primary-sub{
-        font-size: 28px;
-
-    }
-   
-  
-
-   .consigue_invitacion{
-    font-size: 29px;
-}
-.inputBox input{
-    padding: 7px;
-}
-.footer_formulario{
-    padding: 38px;
-}
-
-}
 /*Extra small devices*/
 @media only screen and (max-width:600px) {
 
@@ -179,33 +78,60 @@
 
 }
 
-/*Tiny devices*/
-@media only screen and (max-width:370px) {
+/*Small devices*/
+
+
+@media only screen and (min-width:600px) {
+    .flex_container_center{
+        flex-direction: row;
+    }
 
     .heading-primary-main{
-        font-size: 40px;
+        font-size: 60px;
 
 
     }
     .heading-primary-sub{
-        font-size: 13px;
+        font-size: 28px;
+
     }
    
+  
 
-    .consigue_invitacion{
-        font-size: 25px;
+   .consigue_invitacion{
+    font-size: 29px;
+}
+.inputBox input{
+    padding: 7px;
+}
+.footer_formulario{
+    padding: 38px;
+}
+
+}
+/*Medium devices*/
+@media only screen and (min-width:768px){
+
+    .heading-primary-main{
+        font-size: 66px;
+
     }
-   .inputBox input{
-       padding: 6px;
-   }
-   .footer_formulario{
-    padding: 35px;
+    .heading-primary-sub{
+        font-size: 30px;
+    }
+    
+   /*Titulo del formulario en el footer*/
+   .consigue_invitacion{
+    font-size: 32px;
+}
+.inputBox input{
+    padding: 8px;
+}
+.footer_formulario{
+    padding: 42px;
 }
 
 }
-
-
-
 @media only screen and (max-width:280px){
     .heading-primary-main{
         font-size: 30px;
@@ -214,3 +140,116 @@
         font-size: 9px;
     }
 }
+/*Large devices*/
+@media only screen and (min-width:920px){
+    .heading-primary-main{
+        font-size: 71px;
+
+
+    }
+    .heading-primary-sub{
+        font-size: 35px;
+    }
+ 
+    /*-------Titulo del formulario en el footer--------*/
+    .consigue_invitacion{
+        font-size: 35px;
+    }
+    .inputBox input{
+        padding: 10px;
+    }
+    .footer_formulario{
+        padding: 46px;
+    }
+
+}
+
+
+/*Extra large devices*/
+@media only screen and (min-width:1200px){
+    .heading-primary-main{
+        font-size: 75px;
+    }
+    .heading-primary-sub{
+        font-size: 40px;
+    }
+   
+    /*Titulo del formulario en el footer*/
+    .consigue_invitacion{
+        font-size: 38px;
+    }
+    .inputBox input{
+        padding: 11px;
+    }
+.footer_formulario{
+    padding: 50px;
+}
+}
+
+/*Extra large devices*/
+@media only screen and (min-width:1600px){
+    .heading-primary-main{
+        font-size: 115px;
+    }
+    .heading-primary-sub{
+        font-size: 60px;
+        padding-top: 30px;
+    }
+    .heading-primary span{
+        max-width: 800px;
+    }
+    .magic_title{
+        font-size: 40px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        max-width: 800px;
+    }
+   .magic_content{
+       max-width: 800px;
+       font-size:25px;
+
+   }
+   .FlexContainer div{
+       font-size: 28px;
+       max-width: 800px;
+   }
+   .FlexContainer .hoja1{
+       width: 850px;
+   }
+   .hoja2{
+
+       width: 850px;
+    }
+   .magic_bold{
+       padding-top: 70px;
+       font-size: 28px;
+
+   }
+   .flex_container_center{
+   
+    font-size: 38px;
+}
+.flex_container_center img{
+    width: 500px;
+}
+.flex_container_down div{
+    font-size: 28px;
+}
+    /*Titulo del formulario en el footer*/
+    .consigue_invitacion{
+        font-size: 38px;
+    }
+    .inputBox input{
+        padding: 11px;
+    }
+.footer_formulario{
+    padding: 50px;
+}
+}
+
+
+
+
+
+
+
