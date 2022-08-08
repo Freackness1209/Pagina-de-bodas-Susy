@@ -51,7 +51,7 @@ try{
 
     if($resultado->num_rows==0){
         $hayErrores=true;
-        $mensajeError="No estás registadro";
+        $mensajeError="No estás registrado";
 
     }
     if(!$hayErrores){
