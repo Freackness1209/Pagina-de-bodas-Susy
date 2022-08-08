@@ -2,11 +2,15 @@ body, html{
 padding: 0;
 margin: 0;
 
+
+}
+@font-face {
+    font-family: "OldEnglishFive";
+    src: url(./fuentes/Old\ English\ Five.ttf);
 }
 body{background: white}
 .invitacion{max-width: 800px; margin: 20px auto 0 auto}
 .invitacion img {width: 100%}
-
  .invitacion-top {
   height: 49px;
   background: url(../img/invitacion/invitacion-top.jpg);
@@ -14,7 +18,9 @@ body{background: white}
   padding: 5px;
    border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  
 }
+
 
 
 .invitacion-footer {
@@ -27,6 +33,7 @@ body{background: white}
   background-size: cover;
   opacity: 0.99;
   padding: 5px;
+  
   
 }
 .invitacion-center p {

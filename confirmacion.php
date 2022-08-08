@@ -18,6 +18,7 @@ try{
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/confirmacion.css" type="text/css">
+    <link rel="stylesheet" href="./css/mediaquery.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
@@ -51,9 +52,9 @@ try{
         $resultado=$conexion->query($sql);
         
         ?>
-<h1>Gracias por confirmar</h1> 
+<h1 class="gracias_confirmar">Gracias por confirmar</h1> 
 
-<p><?php echo $Usuario->nombre?></p>
+<p class="nombre_usuario"><?php echo $Usuario->nombre?></p>
 
 <?php 
     }

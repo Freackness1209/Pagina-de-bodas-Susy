@@ -34,7 +34,13 @@
       
     
     }
-   
+    .gracias_confirmar{
+        font-size: 22px;
+    
+    }
+    .nombre_usuario{
+        font-size: 17px;
+    }
 
     .consigue_invitacion{
         font-size: 25px;
@@ -98,7 +104,7 @@
 
 @media only screen and (min-width:605px) {
     .flex_container_center{
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .heading-primary-main{
@@ -126,6 +132,9 @@
 }
 /*Medium devices*/
 @media only screen and (min-width:768px){
+    .flex_container_center{
+        flex-direction: column;
+    }
 
     .heading-primary-main{
         font-size: 66px;
@@ -147,16 +156,15 @@
 }
 
 }
-@media only screen and (max-width:280px){
-    .heading-primary-main{
-        font-size: 30px;
-    }
-    .heading-primary-sub{
-        font-size: 9px;
-    }
-}
+
 /*Large devices*/
+
+
 @media only screen and (min-width:920px){
+    .flex_container_center{
+        flex-direction: row;
+    }
+    
     .heading-primary-main{
         font-size: 71px;
 
@@ -176,6 +184,13 @@
     .footer_formulario{
         padding: 46px;
     }
+    .gracias_confirmar{
+        font-size: 30px;
+    
+    }
+    .nombre_usuario{
+        font-size: 20px;
+    }
 
 }
 
@@ -191,7 +206,7 @@
    
     /*Titulo del formulario en el footer*/
     .consigue_invitacion{
-        font-size: 38px;
+        font-size: 40px;
     }
     .inputBox input{
         padding: 11px;
@@ -199,10 +214,26 @@
 .footer_formulario{
     padding: 50px;
 }
+.flex_container_center div{
+    font-size: 34px;
+}
+.gracias_confirmar{
+    font-size: 35px;
+
+}
+.nombre_usuario{
+    font-size: 25px;
+}
+.footer_formulario{
+    padding:55px
+}
 }
 
-/*Extra large devices*/
+/*Super Extra large devices*/
 @media only screen and (min-width:1600px){
+    .flex_container_center{
+        flex-direction: row;
+    }
     .heading-primary-main{
         font-size: 115px;
     }
@@ -251,7 +282,7 @@
 }
     /*Titulo del formulario en el footer*/
     .consigue_invitacion{
-        font-size: 38px;
+        font-size: 46px;
     }
     .inputBox input{
         padding: 11px;
@@ -259,6 +290,17 @@
 .footer_formulario{
     padding: 50px;
 }
+.gracias_confirmar{
+    font-size: 40px;
+
+}
+.nombre_usuario{
+    font-size: 30px;
+}
+.footer_formulario{
+    padding:65px
+}
+
 }
 
 

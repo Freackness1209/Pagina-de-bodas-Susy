@@ -616,6 +616,9 @@ background-color: lightblue;
 
 .flex_container_center div{
     background: none;
+    .flex_container_center div{
+        font-size: 35px;
+    }
 }
 
 
