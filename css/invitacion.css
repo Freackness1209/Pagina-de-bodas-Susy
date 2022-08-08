@@ -3,7 +3,44 @@ padding: 0;
 margin: 0;
 
 }
+body{background: white}
+.invitacion{max-width: 800px; margin: 20px auto 0 auto}
+.invitacion img {width: 100%}
 
+ .invitacion-top {
+  height: 49px;
+  background: url(../img/invitacion/invitacion-top.jpg);
+  background-size: cover;
+  padding: 5px;
+   border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.invitacion-footer {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.invitacion-center {
+  height: 105px;
+  background: url(../img/invitacion/invitacion-center.jpg);
+  background-size: cover;
+  opacity: 0.99;
+  padding: 5px;
+  
+}
+.invitacion-center p {
+  font-size: 20px;
+}
+
+.invitacion-center-nobackground{
+    height: 105px;
+    background-size: cover;
+    opacity: 0.99;
+    padding: 5px;
+}
+
+/*
 .fondo_boda{
     background: url(../img/img/real.jpeg);
     min-height: 100vh;
@@ -37,7 +74,7 @@ margin: 0;
 }
 
    
-/*
+
 
 .invitacion{
     width: 100%;

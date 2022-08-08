@@ -17,7 +17,26 @@
 /*super extra large devices*/
 
 
-
+/*Extra large devices*/
+@media only screen and (min-width:1600px){
+    .heading-primary-main{
+        font-size: 75px;
+    }
+    .heading-primary-sub{
+        font-size: 40px;
+    }
+   
+    /*Titulo del formulario en el footer*/
+    .consigue_invitacion{
+        font-size: 38px;
+    }
+    .inputBox input{
+        padding: 11px;
+    }
+.footer_formulario{
+    padding: 50px;
+}
+}
 
 
 
@@ -108,6 +127,7 @@
         font-size: 28px;
 
     }
+   
   
 
    .consigue_invitacion{
@@ -132,7 +152,20 @@
     .heading-primary-sub{
         font-size: 13px;
     }
+    .confirma{
+        font-size: 10px;
+    }
+    .flex_item1{
+        font-size: 15px;
+       }
   
+    .photo_absolute{
+        
+        width: 220px;
+        height: 190px;
+        top: 120px;
+      
+    }
 
     .consigue_invitacion{
         font-size: 25px;
@@ -157,9 +190,7 @@
     .heading-primary-sub{
         font-size: 13px;
     }
-    .photo_absolute{
-        left: 8px;
-    }
+   
 
     .consigue_invitacion{
         font-size: 25px;

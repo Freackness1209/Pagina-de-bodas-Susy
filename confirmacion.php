@@ -17,7 +17,7 @@ try{
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="sylesheet" hred="./css/confirmacion.css">
+    <link rel="stylesheet" href="./css/confirmacion.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
@@ -49,12 +49,19 @@ try{
     } else {
         $sql="update Usuarios set total_confirmaciones = total_confirmaciones+1 where id =".$Usuario->id;
         $resultado=$conexion->query($sql);
-        echo "Gracias por confirmar";
-    }
- }
- mysqli_close($conexion);
+        
+        ?>
+<h1>Gracias por confirmar</h1> 
 
-   ?>
+<p><?php echo $Usuario->nombre?></p>
+
+<?php 
+    }
+}
+mysqli_close($conexion);
+
+?>
+
 
 </body>
 </html>

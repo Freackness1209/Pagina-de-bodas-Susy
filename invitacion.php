@@ -18,6 +18,10 @@ try{
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/invitacion.css">
         <link rel="stylesheet" href="./css/mediaquery.css" type="text/css">
+        <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title>Document</title>
     </head>
     <body>
@@ -65,37 +69,43 @@ try{
          $dia = date('d');
         ?>
 
-        <div class="fondo_boda">
-       
-            <header class="heading-primary">
-                <h3 class="flex_item1">Bienvenid@<?php echo $Usuario->nombre. ' '. $Usuario->apellido?>,</h3>
-                <div class="flex-parent">    
-                    <div clas="flex_item1">
+        <div class="container">
+           <div class="row">
+               <div class="invitacion">
+                   <div class="invitacion-top shadow-lg text-center">
 
-                        <p>Tienes <b><?php echo $Usuario->boletos_asignados?></b> boletos asignados</p>
-                    </div>
-                        
-            
-
-                <div class="flex_item1">
-                
-                <form action="confirmacion.php" method="post">
-                    Confirma tus boletos, recuerda que puedes cambiar la cantidad de boletos máximo 3 veces <br> Fecha limite para realizar cambios, 1 de octubre:<select name="boletos_confirmados">
+                       
+                       
+                       <header class="heading-primary">
+                           <h3 class="flex_item1">Bienvenid@<?php echo $Usuario->nombre. ' '. $Usuario->apellido?>,</h3>
                         </div>
-                        <?php for($i=0;$i<= $Usuario->boletos_asignados; $i++){?>
-                            
-                            <div class="flex_item1">
-                                
-                                <option value="<?php echo $i?>"><?php echo $i?></option>
-                                <?php }?>
-                            </div>
-                        </select>
-                        <input type="hidden" name="id" value="<?php echo $Usuario->id?>">
-                        <button type="submit">Confirmar</button>
-                        
-                    </form>
-                    
-                </div>
+                        <img class="invitacion-header shadow-lg" src="./img/invitacion/invitacion-header.jpg">
+                       
+
+                               <div class="invitacion-center shadow-lg text-center" > 
+                                   <p>Tienes <b><?php echo $Usuario->boletos_asignados?></b> boletos asignados</p>
+                                   
+                                   
+                                   <form action="confirmacion.php" method="post" class="confirma">
+                                       Confirma tus boletos, recuerda que puedes cambiar la cantidad de boletos máximo 3 veces <br> Fecha limite para realizar cambios, 1 de octubre:<select name="boletos_confirmados">
+                                           </div>
+                                           <?php for($i=0;$i<= $Usuario->boletos_asignados; $i++){?>
+                                            
+                                            <div class="flex_item1">
+                                                
+                                                <option value="<?php echo $i?>"><?php echo $i?></option>
+                                                <?php }?>
+                                            </div>
+                                        </select>
+                                        <input type="hidden" name="id" value="<?php echo $Usuario->id?>">
+                                        <button type="submit">Confirmar</button>
+                                        
+                                    </form>
+                                    <div>
+                                        <img class="invitacion-footer shadow-lg" src="./img/invitacion/invitacion-footer.jpg">
+                                    </div>
+                                </div>
+                       
                 
             </header>
         </div>
