@@ -413,6 +413,7 @@ footer{
       padding: 50px;
       border-radius:5%;
       padding-top: 65px;
+      z-index: 30;
 
   }
 
@@ -806,7 +807,7 @@ transition: all 0.8s;
     outline-style: double;
 
     transition: 1.5s;
-    z-index: 30;
+    z-index: 20;
 }
 
 .photo_absolute:hover{
