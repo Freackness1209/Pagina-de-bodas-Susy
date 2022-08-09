@@ -35,6 +35,11 @@ body{background: white}
 }
 .invitacion-center p {
   font-size: 20px;
+  color: blue;
+  font-weight: bold;
+}
+.confirma{
+    
 }
 
 .invitacion-center-nobackground{

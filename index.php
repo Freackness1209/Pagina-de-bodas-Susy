@@ -34,7 +34,7 @@
         <div class="img1">
             <h1 class="heading-primary">
                 <span class="heading-primary-main"> 25 años</span>
-                <span class="heading-primary-sub"> Mi boda de plata</span>
+                <span class="heading-primary-sub"> Nuestra boda de plata</span>
               </h1>
     </div>
 
@@ -47,7 +47,9 @@
 
     <div id="slider">
         <div class="galeria">
-
+             
+            <div><img src="./img/bryan-ajustadas/principal.jpeg"></div>
+            
             <div><img src="./img/bryan-ajustadas/1.jpg" ></div>
             <div><img src="./img/bryan-ajustadas/2.jpg"></div>
             <div><img src="./img/bryan-ajustadas/3.jpg"></div>
@@ -62,6 +64,10 @@
             <div><img src="./img/bryan-ajustadas/12.jpg"></div>
             <div><img src="./img/bryan-ajustadas/13.jpg"></div>
             <div><img src="./img/bryan-ajustadas/14.jpg"></div>
+            <div><img src="./img/bryan-ajustadas/17.jpg"></div>
+            
+            
+            
         </div>
     </div>
 </div>
@@ -88,11 +94,11 @@
 
 $(document).ready(function(){
       $('.galeria').bxSlider({
-	    mode: 'horizontal',
+	    mode: 'vertical',
 	    captions: false,
 	    slideWidth: 1000,
 	    responsive: true,
-	    pager: true,
+	    pager: false,
         auto:true,
         adaptiveHeight:true,
         speed: 500,
@@ -160,7 +166,7 @@ Para llegar a los 25 años de casado, antes hay que pasar por las bodas de hierr
 
 <section class="flex_container_down">
 <div>
-Si, a pesar de los recortes, la crisis, el IVA y pasar juntos toda la pandemia...
+A pesar de los recortes, la crisis, el IVA y pasar juntos toda la pandemia...
 </div>
             <div>Lo logramos!</div>
             <div>Y con gran júbilo tenemos el agrado de invitarlos junto con nuestros hijos Jonathan y Cristian a compartir con ustedes nuestras bodas de plata.</div>
@@ -194,7 +200,7 @@ Si, a pesar de los recortes, la crisis, el IVA y pasar juntos toda la pandemia..
 
 
                          <div class="inputBox">
-                             <h1 class="consigue_invitacion">!Consigue tu invitación!</h1>
+                             <h1 class="consigue_invitacion">Regístrate para asistir a nuestra boda</h1>
 
                              <input type="text" required="required" name="nombre" >
                              <span>Nombre</span>
