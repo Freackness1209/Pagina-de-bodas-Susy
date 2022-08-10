@@ -13,43 +13,35 @@
     <link rel="stylesheet" href="./invitacion.html">
 
     <!--Slider--->
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Slider -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-<!-- Moment -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
-
-
-
-        <div class="img1">
-            <h1 class="heading-primary">
-                <span class="heading-primary-main"> 25 años</span>
-                <span class="heading-primary-sub"> Nuestra boda de plata</span>
-              </h1>
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+</head>
+<body>
+    <div class="img1">
+        <h1 class="heading-primary">
+            <span class="heading-primary-main"> 25 años</span>
+            <span class="heading-primary-sub"> Nuestra boda de plata</span>
+            </h1>
     </div>
 
     <div class="img0">
-
-</div>
+    </div>
 
 <header>
 <div class="hola">
 
     <div id="slider">
         <div class="galeria">
-             
+
             <div><img src="./img/bryan-ajustadas/principal.jpeg"></div>
-            
+
             <div><img src="./img/bryan-ajustadas/1.jpg" ></div>
             <div><img src="./img/bryan-ajustadas/2.jpg"></div>
             <div><img src="./img/bryan-ajustadas/3.jpg"></div>
@@ -65,9 +57,9 @@
             <div><img src="./img/bryan-ajustadas/13.jpg"></div>
             <div><img src="./img/bryan-ajustadas/14.jpg"></div>
             <div><img src="./img/bryan-ajustadas/17.jpg"></div>
-            
-            
-            
+
+
+
         </div>
     </div>
 </div>
@@ -194,7 +186,7 @@ A pesar de los recortes, la crisis, el IVA y pasar juntos toda la pandemia...
                  <img src="./img/fotos_sin_ajustar/foto.jpg" alt="photo 1" class="photo_absolute">
                 </div>
             </div>
-     
+
      <section class='Footer_flex'>
      <form action="invitacion.php" method="POST" class="footer_formulario"><div>
 

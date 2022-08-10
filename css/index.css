@@ -50,7 +50,6 @@ header{
 */
 .img1{
     background: url(../img/fotos_sin_ajustar/10.jpg);
-    min-height: 90vh;
     background-size: cover;
     padding-bottom: 5%;
 
@@ -74,11 +73,10 @@ header{
 .img1, .img2, .img3,.img0{
     position: relative;
     opacity: .84;
-    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;
     background-repeat: no-repeat;
-
+*/
 
 }
 .img2 section{
@@ -368,7 +366,7 @@ display: flex;
 .magic_title{
 
     max-width:800px;
-    
+
     font-size: 30px;
     font-family: "OldEnglishFive";
     padding-top: 10px;
@@ -379,7 +377,7 @@ display: flex;
 }
 .magic_content{
     max-width:600px;
-    
+
     font-size: 16px;
     font-family: "Book Antiqua";
 }
@@ -618,7 +616,7 @@ background-color: lightblue;
 .flex_container_center div{
     background: none;
     font-size: 35px;
-   
+
 }
 
 
@@ -640,7 +638,7 @@ transition: all 0.8s;
 .flex_item_center{
     flex-grow:2;
     line-height: 4;
-    
+
 }
 .flex_container_center div{
     font-size: 32px;
@@ -648,7 +646,7 @@ transition: all 0.8s;
 
 .flex_container_center div:nth-child(odd):hover img {
     transform: scale(1.05);
-  
+
 
 
 }
@@ -778,14 +776,14 @@ transition: all 0.8s;
 }
 
 .swiper .swiper-slide img{
- 
+
 }
 
 .container_img_main{
     position: relative;
     height: 300px;
     background: linear-gradient(to right bottom, rgba(112, 123, 124, .1), rgba(229,231,233, .4)), url(./img/0.jpg);
-  
+
 
 }
 
@@ -795,7 +793,7 @@ transition: all 0.8s;
     max-width:900px ;
     height: 300px;
     background: linear-gradient(to right bottom, rgba(112, 123, 124, .1), rgba(229,231,233), .), url(./img/0.jpg);
-    
+
 }
 .photo_absolute{
     position: absolute;
@@ -814,7 +812,7 @@ transition: all 0.8s;
     transform: scale(1.05);
     outline-style: none;
     border: none;
-    
+
 
 }
 .Footer_flex{
